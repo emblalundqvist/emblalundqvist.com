@@ -82,6 +82,7 @@ nav a {
 }
 
 
+
 /* heroSection */
 
 #heroSection {
@@ -281,6 +282,13 @@ nav a {
     margin-bottom: 10px;
 }
 
+#latestProjectGalleriRowGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 lika breda kolumner */
+    grid-template-rows: repeat(2, auto); /* 2 rader som anpassar sig efter innehållet */
+    gap: 20px; /* Mellanrum mellan rutorna */
+}
+
 .latestProjectGalleriPost img {
     height: 313px;
 }
@@ -299,6 +307,22 @@ nav a {
     line-height: 20px;
     width: 300px;
 }
+
+#latestProjectGalleriInfoTextSectionGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 5 lika breda kolumner */
+    grid-template-rows: repeat(1, auto); /* 2 rader som anpassar sig efter innehållet */
+    margin-top: 60px;
+}
+
+.latestProjectGalleriInfoTextCell p {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'helRegL';
+    margin: 15px 0 0 0;
+}
+
 
 
 /* AboutMe */
@@ -393,7 +417,64 @@ footer a {
     justify-content: space-between;
 }
 
+
+
+
+
+@media (max-width: 1300px) and (min-width:500px) {
+
+    #hSBot h1 {
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: -0.04em;
+        margin: 0;
+    }
+
+    #hSBot {
+        width: 520px;
+        height: 360px;
+        margin: auto;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    #latestProjectBigPoster {
+        background-image: url(img/ELDrinkPosters/ElDrinkPosterFeb3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 281px;
+        height: 379px;
+        border: 0.3px black solid;
+    }
+
+    .latestProjectGalleriPost img {
+        width: 179px;
+        height: auto;
+    }
+
+    .latestProjectGalleriRow {
+        display: flex;
+        flex-direction: row;
+        width: 1000px;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    #latestProjectGalleriInfoTextSection {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+    
+}
+
+
+
+
 @media (max-width: 500px) {
+
+   
     nav {
         flex-direction: column;
     }
