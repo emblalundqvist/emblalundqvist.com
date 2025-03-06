@@ -417,7 +417,7 @@ footer a {
 
 #footerSection {
     display: flex;
-    width: 1000px;
+    width: 700px;
     justify-content: space-between;
 }
 
@@ -569,7 +569,7 @@ footer a {
     }
 
     #footerSection {
-        width: 100%;
+        width: 700px;
     }
 
     #latestProjectInfoBox {
@@ -669,7 +669,9 @@ footer a {
         margin: auto;
     }
 
-    
+    #footerSection {
+        width: 500px;
+    }
 }
 
 @media (max-width: 670px) {
@@ -716,6 +718,10 @@ footer a {
         bottom: -164px;
         right: 30px;
         
+    }
+
+    #latestProjectGalleriContainer {
+        margin-top: 0px;
     }
 
     #latestProjectInfoBox h1 {
@@ -860,4 +866,16 @@ footer a {
         margin-bottom: 150px;
     }
 
+    #footerSection {
+        width: 300px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .latestProjectGalleriPost img {
+        height: 300px;
+        width: auto;
+    }
 }
+
+
