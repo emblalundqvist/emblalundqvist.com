@@ -266,7 +266,7 @@ nav a {
 
 #latestProjectGalleriContainer {
     width: 100%;
-    height: 1120px;
+    /* height: 1120px; */
     background-color: rgba(10, 10, 10, 1);
     margin-top: 120px;
     display: flex;
@@ -321,6 +321,10 @@ nav a {
     line-height: 20px;
     font-family: 'helRegL';
     margin: 15px 0 0 0;
+}
+
+#latestProjectGalleriSection {
+    margin-bottom: 100px;
 }
 
 
@@ -421,18 +425,18 @@ footer a {
 
 
 
-@media (max-width: 1300px) and (min-width:500px) {
+@media (max-width: 1300px) and (min-width:1070px) {
 
     #hSBot h1 {
-        font-size: 40px;
-        line-height: 55px;
+        font-size: 50px;
+        line-height: 65px;
         letter-spacing: -0.04em;
         margin: 0;
     }
 
     #hSBot {
-        width: 520px;
-        height: 360px;
+        width: 641px;
+        height: 230px;
         margin: auto;
         position: relative;
         margin-top: 50px;
@@ -443,8 +447,8 @@ footer a {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        width: 281px;
-        height: 379px;
+        width: 477px;
+        height: 635px;
         border: 0.3px black solid;
     }
 
@@ -466,15 +470,214 @@ footer a {
         flex-direction: column;
         margin-top: 120px;
     }
+
+    #namnCursiv {
+        width: 380px;
+        bottom: -64px;
+        right: 60px;
+    }
+
+    #ELladyInRed {
+        width: 320px;
+        height: 418px;
+        bottom: -383px;
+        right: -152px;
+    }
+
+    #latestProjectInfoBox h1 {
+        font-size: 3
+        20px;
+    }
+
+    #latestProjectInfoBox {
+        width: 477px;
+        height: 635px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    #inRingSection {
+        position: relative;
+        width: 477px;
+        height: 175px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    #inRingImg {
+        width: 530px;
+    }
     
 }
 
 
 
+@media (max-width: 1070px) and (min-width:875px) {
 
-@media (max-width: 500px) {
+    #hSBot h1 {
+        font-size: 50px;
+        line-height: 65px;
+        letter-spacing: -0.04em;
+        margin: 0;
+    }
 
-   
+    #hSBot {
+        width: 641px;
+        height: 230px;
+        margin: auto;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    #latestProjectBigPoster {
+        width: 591px;
+        height: 787px;
+        margin: auto;
+    }
+
+    #namnCursiv {
+        width: 380px;
+        bottom: -64px;
+        right: 60px;
+    }
+
+    #ELladyInRed {
+        width: 228px;
+        height: 306px;
+        bottom: -251px;
+        right: -112px;
+    }
+
+    #latestProjectCloseUp {
+        flex-direction: column;
+    }
+
+    #latestProjectGalleriRowGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 5 lika breda kolumner */
+        grid-template-rows: repeat(3, auto); /* 2 rader som anpassar sig efter innehållet */
+        gap: 20px; /* Mellanrum mellan rutorna */
+    }
+
+    #AboutMeLandingPageText {
+        margin-right: 25px;
+    }
+
+    #footerSection {
+        width: 100%;
+    }
+
+    #latestProjectInfoBox {
+        margin: auto;
+    }
+
+    
+
+}
+
+
+
+
+@media (max-width: 875px) and (min-width:670px) {
+
+    #hSBot h1 {
+        font-size: 50px;
+        line-height: 65px;
+        letter-spacing: -0.04em;
+        margin: 0;
+    }
+
+    #hSBot {
+        width: 641px;
+        height: 230px;
+        margin: auto;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    #namnCursiv {
+        width: 380px;
+        bottom: -64px;
+        right: 60px;
+    }
+
+    #ELladyInRed {
+        width: 228px;
+        height: 306px;
+        bottom: -353px;
+        right: 10px;
+        
+    }
+
+    #latestProjectGalleriRowGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 5 lika breda kolumner */
+        grid-template-rows: repeat(5, auto); /* 2 rader som anpassar sig efter innehållet */
+        gap: 20px; /* Mellanrum mellan rutorna */
+    }
+
+    .latestProjectGalleriPost img {
+        height: 397px;
+        width: auto;
+    }
+
+    #AboutMeLandingPageContainer {
+        flex-direction: column;
+    }
+
+    #latestProjectCloseUp {
+        flex-direction: column;
+    }
+
+
+    #latestProjectBigPoster {
+        width: 591px;
+        height: 787px;
+        margin: auto;
+    }
+
+    #latestProjectInfoBox {
+        margin: auto;
+    }
+
+    #latestProjectGalleriInfoTextSectionGrid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    #AboutMeLandingPageContainer {
+        flex-direction: column-reverse;
+
+    }
+
+    #AboutMeLandingPageText {
+        margin-right: 0px;
+    }
+
+    #AboutMeLandingPageSection {
+        height: 1225px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #AboutMeLandingPageImg {
+        margin: auto;
+    }
+
+    
+}
+
+@media (max-width: 670px) {
+
+    body {
+        min-width: 380px;
+    }
+
     nav {
         flex-direction: column;
     }
@@ -483,5 +686,178 @@ footer a {
         width: 300px;
         font-weight: medium;
     }
+
+    #latestProjectGalleriRowGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 5 lika breda kolumner */
+        grid-template-rows: repeat(5, auto); /* 2 rader som anpassar sig efter innehållet */
+        gap: 20px; /* Mellanrum mellan rutorna */
+    }
+
+
+    #hSBot {
+        width: 100%;
+        height: 230px;
+        margin: auto;
+        position: relative;
+        margin-top: 50px;
+        padding-left: 20px;
+    }
+
+    #namnCursiv {
+        width: 231px;
+        bottom: -369px;
+        left: 100px;
+    }
+
+    #ELladyInRed {
+        width: 169px;
+        height: 270px;
+        bottom: -164px;
+        right: 30px;
+        
+    }
+
+    #latestProjectInfoBox h1 {
+        font-size: 30px; 
+        text-align: center;
+    }
+
+    #latestProjectInfoBox p {
+        text-align: center;
+        max-width: 350px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
     
+    }
+
+    #inRingSection h1 {
+        font-size: 16px;
+        margin: 5px
+    }
+
+    #latestProjectGalleriRowGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 5 lika breda kolumner */
+        grid-template-rows: repeat(10, auto); /* 2 rader som anpassar sig efter innehållet */
+        gap: 20px; /* Mellanrum mellan rutorna */
+    }
+
+    .latestProjectGalleriPost img {
+        height: 397px;
+        width: auto;
+    }
+
+    #AboutMeLandingPageContainer {
+        flex-direction: column;
+    }
+
+    #latestProjectCloseUp {
+        flex-direction: column;
+    }
+
+
+    #latestProjectBigPoster {
+        width: 300px;
+        height: 399px;
+        margin: auto;
+    }
+
+    #latestProjectInfoBox {
+        margin: auto;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #latestProjectGalleriInfoTextSectionGrid {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+    }
+
+    #AboutMeLandingPageContainer {
+        flex-direction: column-reverse;
+
+    }
+
+    #AboutMeLandingPageText {
+        margin-right: 0px;
+    }
+
+    #AboutMeLandingPageSection {
+        height: 1225px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #AboutMeLandingPageText h1 {
+        font-size: 30px;
+    }
+    
+    #AboutMeLandingPageText p {
+        font-size: 15px;
+    }
+
+   
+    #latestProjectInfoBox p {
+        font-size: 15px;
+    }
+    
+
+    #AboutMeLandingPageImg {
+        height: 388px;
+        width: 220px;
+        margin: auto; 
+    }
+
+
+    #inRingSection {
+        width: 350px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #inRingImg {
+        width: 370px;
+    }
+    
+     
+    
+    #hSBot h1 {
+        font-size: 45px;
+        line-height: 55px;
+        letter-spacing: -0.04em;
+        margin: 0;
+        width: 215px;
+    }
+
+    .latestProjectGalleriPost {
+        display: flex;
+        justify-content: center;
+    }
+
+    #shopNowButton {
+        height: 30px;
+    }
+
+    #latestProjectInfoBox p {
+        text-align: center;
+        max-width: 350px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    
+    }
+
+    #heroSection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
 }
