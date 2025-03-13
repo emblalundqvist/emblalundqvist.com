@@ -412,7 +412,7 @@ font-size: 40px;
 }
 
 #sFPBigPoster {
-    background-image: url(img/Skiposters/skipostersCerv.PNG);
+    background-image: url(img/Skiposters/skipostersCham.PNG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -491,7 +491,7 @@ font-size: 40px;
 }
 
 
-
+/* footer */
 
 footer {
     height: 450px;
@@ -609,7 +609,7 @@ footer a {
     }
 
     #sFPBigPoster {
-        background-image: url(img/Skiposters/skipostersCerv.PNG);
+        background-image: url(img/Skiposters/skipostersCham.PNG);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
