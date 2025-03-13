@@ -171,9 +171,6 @@ nav a {
 
 /* Latest project */
 
-#latestProject {
- 
-}
 
 #latestProjectCloseUp {
     display: flex;
@@ -274,13 +271,13 @@ nav a {
     padding-top: 120px;
 }
 
-.latestProjectGalleriRow {
+/* .latestProjectGalleriRow {
     display: flex;
     flex-direction: row;
     width: 1224px;
     justify-content: space-between;
     margin-bottom: 10px;
-}
+} */
 
 #latestProjectGalleriRowGrid {
     display: grid;
@@ -300,13 +297,13 @@ nav a {
     margin-top: 120px;
 }
 
-.latestProjectGalleriInfoText p {
+/* .latestProjectGalleriInfoText p {
     font-family: 'helRegL';
     color: white;
     font-size: 14px;
     line-height: 20px;
     width: 300px;
-}
+} */
 
 #latestProjectGalleriInfoTextSectionGrid {
     display: grid;
@@ -400,6 +397,102 @@ font-size: 40px;
 }
 
 
+
+
+
+#skiposterFirstPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sFPCloseUp {
+    display: flex;
+    margin: auto;
+}
+
+#sFPBigPoster {
+    background-image: url(img/Skiposters/skipostersCerv.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 477px;
+    height: 635px;
+    border: 0.3px black solid;
+}
+
+#sFPInfoBox {
+    width: 600px;
+    height: 635px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+#sFPInfoBox p {
+    font-family: 'helRegN';
+    line-height: 24px;
+}
+
+#sFPInfoBox h1 {
+    font-size: 40px;
+    font-family: 'minionProReg';
+    transform: scale(1, 1.15);
+    display: inline-block;
+    font-weight: normal; 
+}
+
+/* SkiposterGalleriContainer */
+
+#sFPGalleriContainer {
+    width: 100%;
+    /* height: 1120px; */
+    background-color: rgba(10, 10, 10, 1);
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+#sFPGalleriRowGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 lika breda kolumner */
+    grid-template-rows: repeat(2, auto); /* 2 rader som anpassar sig efter innehållet */
+    gap: 20px; /* Mellanrum mellan rutorna */
+    margin: auto;
+}
+
+.sFPGalleriPost img {
+    height: 300px; /* Sätter en fast höjd */
+    width: auto; /* Bredden justeras automatiskt */
+}
+
+#sFPGalleriSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+#sFPGalleriInfoTextSectionGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 lika breda kolumner */
+    grid-template-rows: repeat(1, auto); /* 2 rader som anpassar sig efter innehållet */
+    margin-top: 60px;
+}
+
+.sFPProjectGalleriInfoTextCell p {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'helRegL';
+    margin: 15px 0 0 0;
+    
+}
+
+
+
+
 footer {
     height: 450px;
     background-color: black;
@@ -420,6 +513,8 @@ footer a {
     width: 700px;
     justify-content: space-between;
 }
+
+
 
 
 
@@ -512,6 +607,32 @@ footer a {
     #inRingImg {
         width: 530px;
     }
+
+    #sFPBigPoster {
+        background-image: url(img/Skiposters/skipostersCerv.PNG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 477px;
+        height: 635px;
+        border: 0.3px black solid;
+    }
+
+    #sFPInfoBox {
+        width: 477px;
+        height: 635px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+
+    
+    /* .sFPGalleriPost img {
+        width: 179px;
+        height: auto;
+    } */
     
 }
 
@@ -574,10 +695,45 @@ footer a {
 
     #latestProjectInfoBox {
         margin: auto;
+        height: 512px;
+        margin-top: 40px;
     }
 
+    /* #latestProjectBigPosterSki {
+        width: 591px;
+        height: 787px;
+        margin: auto;
+    } */
     
+    #sFPBigPoster {
+        width: 591px;
+        height: 787px;
+        margin: auto;
+    }
 
+    #sFPCloseUp {
+        flex-direction: column;
+    }
+
+    #sFPInfoBox {
+        margin: auto;
+        height: 280px;
+        margin-top: 40px;
+    }
+
+    #sFPGalleriRowGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 5 lika breda kolumner */
+        grid-template-rows: repeat(3, auto); /* 2 rader som anpassar sig efter innehållet */
+        gap: 20px; /* Mellanrum mellan rutorna */
+    }
+
+    #sFPGalleriInfoTextSectionGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 5 lika breda kolumner */
+        grid-template-rows: repeat(1, auto); /* 2 rader som anpassar sig efter innehållet */
+        margin-top: 60px;
+    }
 }
 
 
@@ -643,6 +799,8 @@ footer a {
 
     #latestProjectInfoBox {
         margin: auto;
+        height: 515px;
+        margin-top: 40px;
     }
 
     #latestProjectGalleriInfoTextSectionGrid {
@@ -672,9 +830,56 @@ footer a {
     #footerSection {
         width: 500px;
     }
+
+    /* #latestProjectBigPosterSki {
+        width: 591px;
+        height: 787px;
+        margin: auto;
+    } */
+
+
+    #sFPGalleriRowGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 5 lika breda kolumner */
+        grid-template-rows: repeat(5, auto); /* 2 rader som anpassar sig efter innehållet */
+        gap: 20px; /* Mellanrum mellan rutorna */
+    }
+
+    .sFPGalleriPost img {
+        height: 397px;
+        width: auto;
+    }
+
+    #sFPCloseUp {
+        flex-direction: column;
+    }
+
+
+    #sFPBigPoster {
+        width: 591px;
+        height: 787px;
+        margin: auto;
+    }
+
+    #sFPInfoBox {
+        margin: auto;
+        height: 280px;
+        margin-top: 40px;
+    }
+
+    #sFPGalleriInfoTextSectionGrid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
 }
 
+
+
+
+
+
 @media (max-width: 670px) {
+
 
     body {
         min-width: 380px;
@@ -682,6 +887,7 @@ footer a {
 
     nav {
         flex-direction: column;
+        height: 67px;
     }
 
     #navOptionsContainer {
@@ -689,12 +895,17 @@ footer a {
         font-weight: medium;
     }
 
-    #latestProjectGalleriRowGrid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 5 lika breda kolumner */
-        grid-template-rows: repeat(5, auto); /* 2 rader som anpassar sig efter innehållet */
-        gap: 20px; /* Mellanrum mellan rutorna */
+    #navOptionsContainer p {
+        margin: 0px;
+        margin-bottom: 10px;
+        margin-top: 15px;
     }
+
+    #navName p {
+        margin: 0px;
+        margin-top: 10px;
+    }
+
 
 
     #hSBot {
@@ -722,6 +933,8 @@ footer a {
 
     #latestProjectGalleriContainer {
         margin-top: 0px;
+        padding-top: 40px;
+
     }
 
     #latestProjectInfoBox h1 {
@@ -735,8 +948,9 @@ footer a {
         margin: auto;
         margin-top: 0px;
         margin-bottom: 0px;
-    
     }
+
+   
 
     #inRingSection h1 {
         font-size: 16px;
@@ -748,11 +962,6 @@ footer a {
         grid-template-columns: repeat(1, 1fr); /* 5 lika breda kolumner */
         grid-template-rows: repeat(10, auto); /* 2 rader som anpassar sig efter innehållet */
         gap: 20px; /* Mellanrum mellan rutorna */
-    }
-
-    .latestProjectGalleriPost img {
-        height: 397px;
-        width: auto;
     }
 
     #AboutMeLandingPageContainer {
@@ -775,11 +984,18 @@ footer a {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
+        height: 512px;
+        margin-top: 20px;
+    }
+
+    #latestProjectGalleriSection {
+        margin-bottom: 60px;
     }
 
     #latestProjectGalleriInfoTextSectionGrid {
         grid-template-columns: repeat(1, 1fr);
         column-gap: 20px;
+        margin-top: 40px;
     }
 
     #AboutMeLandingPageContainer {
@@ -792,7 +1008,7 @@ footer a {
     }
 
     #AboutMeLandingPageSection {
-        height: 1225px;
+        height: 1050px;
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -873,8 +1089,78 @@ footer a {
     }
 
     .latestProjectGalleriPost img {
-        height: 300px;
+        height: 330px;
         width: auto;
+    }
+
+    /* #latestProjectBigPosterSki {
+        width: 300px;
+        height: 399px;
+        margin: auto;
+    } */
+
+
+    #sFPGalleriRowGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 5 lika breda kolumner */
+        grid-template-rows: repeat(10, auto); /* 2 rader som anpassar sig efter innehållet */
+        gap: 20px; /* Mellanrum mellan rutorna */
+    }
+
+    .sFPGalleriPost img {
+        height: 330px;
+        width: auto;
+    }
+
+
+    #sFPGalleriContainer {
+        margin-top: 0px;
+    }
+
+    #sFPInfoBox h1 {
+        font-size: 30px; 
+        text-align: center;
+    }
+
+    #sFPInfoBox p {
+        text-align: center;
+        max-width: 350px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    
+    }
+
+    #sFPCloseUp {
+        flex-direction: column;
+    }
+
+
+    #sFPBigPoster {
+        width: 300px;
+        height: 399px;
+        margin: auto;
+    }
+
+    #sFPInfoBox {
+        margin: auto;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 370px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #sFPGalleriInfoTextSectionGrid {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+        margin-top: 0px;
+    }
+
+    #sFPGalleriSection {
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
