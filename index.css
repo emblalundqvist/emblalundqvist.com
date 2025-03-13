@@ -352,7 +352,7 @@ nav a {
 }
 
 #AboutMeLandingPageText h1 {
-font-size: 40px;
+    font-size: 40px;
     font-family: 'minionProReg';
     transform: scale(1, 1.15);
     display: inline-block;
@@ -396,6 +396,32 @@ font-size: 40px;
     background-size: contain;
 }
 
+
+#instagramBanderoll {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C24FF;
+    margin-bottom: 150px;
+    flex-direction: row;
+}
+
+#instagramBanderoll h1 {
+    font-size: 20px;
+    font-family: 'minionProReg';
+    transform: scale(1, 1.15);
+    display: inline-block;
+    font-weight: normal; 
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+#instagramBanderoll a {
+    color: white;
+    text-decoration: none;
+}
 
 
 
@@ -1098,6 +1124,26 @@ footer a {
         height: 399px;
         margin: auto;
     } */
+
+
+    #instagramBanderoll {
+        height: 80px;
+        background-color: #1C24FF;
+        margin-bottom: 60px;
+        flex-direction: row;
+    }
+    
+    #instagramBanderoll h1 {
+        font-size: 16px;
+        font-family: 'minionProReg';
+        transform: scale(1, 1.15);
+        display: inline-block;
+        font-weight: normal; 
+        margin: 0;
+        color: white;
+        text-decoration: none;
+    }
+
 
 
     #sFPGalleriRowGrid {
