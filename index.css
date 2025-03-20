@@ -257,8 +257,10 @@ nav a {
     border-radius: 16px;
 }
 
+
 #inRingSection > a {
     z-index: 99001;
+    text-decoration: none;
   }
 
 
