@@ -1,0 +1,41 @@
+
+.wrapperGallery { 
+    background-color: blueviolet;
+    width: 1254.14px;
+    height: 100%;
+    margin: auto;
+    
+}
+
+.menuGallery {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    width: 1254.14px;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.menuGalleryCol {
+    /* background-color: pink; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menuGalleryCol a {
+    text-decoration: none;
+    color: black;
+    font-family: 'minionProReg';
+    transform: scale(1, 1.15);
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.contentGallery {
+    background-color: blue;
+    height: 500px;
+    width: 100%;
+    display: grid;
+}

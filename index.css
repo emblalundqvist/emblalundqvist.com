@@ -19,6 +19,10 @@
     src: url(font/Miniver-Regular\ \(kopia\).ttf);
 }
 
+#messageHihi {
+    margin-top: 40vh;
+    margin-left: 10vw;
+}
 
 * {
     box-sizing: border-box;
@@ -55,7 +59,7 @@ nav a {
 
 #navOptionsContainer {
     display: flex;
-    width: 350px;
+    width: 450px;
     justify-content: space-between;
 }
 
@@ -1218,5 +1222,7 @@ footer a {
         margin-bottom: 40px;
     }
 }
+
+
 
 

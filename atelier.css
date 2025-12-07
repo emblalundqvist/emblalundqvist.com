@@ -1,0 +1,169 @@
+
+
+/* #containerAtelier {
+    background-color: rgb(255, 215, 236);
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#thecolumn {
+    
+    max-width: 1948.4px;
+    columns: 8;
+    column-gap: 10px;
+    background-color: rgb(218, 153, 33);
+    
+} */
+
+
+
+
+/* #thecolumn div {
+    
+    page-break-inside: avoid;
+
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 38px;
+    font-weight: 900;
+    font-family: sans-serif;
+
+    width: 234.8px;
+}  */
+
+
+/* @media (max-width: 1970px) and (min-width:1723.6px) {
+    #thecolumn {
+        max-width: 1703.6px;
+        columns: 7;
+    }
+} */
+
+/* @media (max-width: 1723.6px) and (min-width:1478.8px) {
+    #thecolumn {
+        max-width: 1458.8px;
+        columns: 6;
+    }
+}
+
+@media (max-width: 1478.8px) and (min-width:1234px) {
+    #thecolumn {
+        max-width: 1214px;
+        columns: 5;
+    }
+} */
+
+/* @media (max-width: 1234px) and (min-width:989.2px) {
+    #thecolumn {
+        max-width: 969.2px;
+        columns: 4;
+    }
+} */
+
+/* @media (max-width: 989.2px) and (min-width:744.4px) {
+    #thecolumn {
+        max-width: 724.4px;
+        columns: 3;
+    }
+} */
+
+
+
+
+
+
+
+
+
+/* Container runt hela flödet */
+/* #containerAtelier {
+    background-color: rgb(255, 215, 236);
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+} */
+
+/* Huvudkolumnen */
+/* #thecolumn {
+    position: relative;  */
+    /* max-width: 1948px;
+    width: 100%;
+} */
+
+/* Dina items */
+/* #thecolumn div {
+    position: absolute;
+    width: 234px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: black;
+    box-sizing: border-box; */
+
+    /* Lägg till transition för mjuk rörelse */
+    /* transition: transform 0.2s ease;
+} */
+
+
+
+
+ /* Container runt hela flödet */
+ #containerAtelier {
+    /* background-color: rgb(255, 215, 236); */
+    background-color: rgba(255, 252, 248, 1);
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Huvudkolumnen */
+#thecolumn {
+    position: relative; /* för absolut-positionering av items */
+    max-width: 1948px;
+    width: 100%;
+}
+
+/* Dina items */
+#thecolumn div {
+    position: absolute;
+    width: 234px; /* standardbredd för desktop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: black;
+    box-sizing: border-box;
+
+    /* mjuk flyttning vid resize */
+    transition: transform 0.4s ease;
+
+    /* mjuk skugga runt bilden */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 2px; /* valfritt, rundar hörnen lite */
+}
+
+#thecolumn div img {
+    width: 100%;
+    height: auto; /* behåller proportioner */
+    display: block; /* tar bort extra space under bild */
+}
+
+
+/* Mobilanpassning: mindre divar för smala skärmar */
+@media (max-width: 500px) {
+    #thecolumn div {
+        width: 150px;
+        font-size: 28px; /* mindre text på mobil */
+    }
+}
+

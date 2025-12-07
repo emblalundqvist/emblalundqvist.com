@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container {
+            }
+
+            #thecolumn {
+                margin: 0px auto;
+                max-width: 1024px;
+                columns: 1;
+                column-gap: 10px;
+            }
+
+            @media (min-width: 768px) {
+                #thecolumn {
+                    columns: 2;
+                }
+            }
+
+            @media (min-width: 1280px) {
+                #thecolumn {
+                    columns: 3;
+                }
+            }
+
+            #thecolumn div {
+                /* Viktigt för att inte block ska flöda över */
+                page-break-inside: avoid;
+
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                font-size: 38px;
+                font-weight: 900;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="container">
+            <div id="thecolumn">
+                <div style="height: 200px; background-color: red;">1</div>
+                <div style="height: 240px; background-color: green;">2</div>
+                <div style="height: 100px; background-color: pink;">3</div>
+                <div style="height: 140px; background-color: blue;">4</div>
+                <div style="height: 240px; background-color: yellow;">5</div>
+                <div style="height: 120px; background-color: blue;">6</div>
+                <div style="height: 320px; background-color: red;">7</div>
+                <div style="height: 100px; background-color: green;">8</div>
+                <div style="height: 100px; background-color: rgb(34, 133, 144);">9</div>
+                <div style="height: 110px; background-color: rgb(72, 15, 60);">10</div>
+                <div style="height: 200px; background-color: red;">11</div>
+            </div>
+        </div>
+        
+    </body>
+</html>
