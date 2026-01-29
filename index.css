@@ -927,8 +927,9 @@ footer a {
     }
 
     #navOptionsContainer {
-        width: 300px;
+        width: 350px;
         font-weight: medium;
+        font-size: 12px;
     }
 
     #navOptionsContainer p {
