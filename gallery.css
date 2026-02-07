@@ -4,6 +4,12 @@
     
 } */
 
+#eee {
+    height: 100px;
+    width: 100%;
+  
+}
+
 .menuGallery {
     /* background-color: aquamarine; */
     display: flex;
