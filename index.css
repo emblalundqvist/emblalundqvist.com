@@ -85,6 +85,12 @@ nav a {
     color: white;
 }
 
+#navAtelier a:hover {
+    background-color: black;
+    color: white;
+}
+
+
 
 
 /* heroSection */

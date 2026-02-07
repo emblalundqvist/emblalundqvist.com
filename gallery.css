@@ -1,19 +1,21 @@
 
-.wrapperGallery { 
-    background-color: blueviolet;
-    width: 1254.14px;
-    height: 100%;
+/* .wrapperGallery { 
     margin: auto;
     
-}
+} */
 
 .menuGallery {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
     flex-direction: row;
-    width: 1254.14px;
+    /* width: 1254.14px; */
     justify-content: space-between;
-    margin-top: 100px;
+   
+    max-width: 1254px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    
 }
 
 .menuGalleryCol {
@@ -34,8 +36,355 @@
 }
 
 .contentGallery {
-    background-color: blue;
-    height: 500px;
-    width: 100%;
+    max-width: 1254px;
+    /* width: 100%; */
+    margin: auto;
+    /* display: grid; */
+    margin-bottom: 200px;
+}
+
+.contentGallery h1 {
+    font-size: 40px;
+    font-family: 'minionProReg';
+    transform: scale(1, 1.15);
+    display: inline-block;
+    font-weight: normal;
+}
+
+.contentGallery p {
+    font-family: 'helRegN';
+    line-height: 24px;
+}
+
+.contentGalleryImg {
+    /* background-color: rgb(246, 127, 255); */
+    margin: auto;
+    margin-top: 60px;
     display: grid;
+    height: 1254px;
+    width: 1254px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 20px;
+}
+
+
+
+
+
+/* Alla bilder */
+
+#retroResanBroschyr1 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 5;
+   
+    /* Bild som bakgrund */
+    background-image: url('img/imgAtelier/retroResanBroschyr1AT.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+
+#retroResanBroschyr2 {
+    grid-column: 6 / 11;
+    grid-row: 7 / 11;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgAtelier/retroResanBroschyr2AT.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr3 {
+    background-color: black;
+    grid-column: 6 / 11;
+    grid-row: 1 / 7;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgAtelier/retroResanMobilVuMockSvartAT.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: contain;
+}
+
+#retroResanBroschyr4 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 5 / 11;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgAtelier/RetroResanKartaAT.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+/* Chunks */
+
+#retroResanBroschyr5 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
+   
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/mockupChunks.png');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr6 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 1 / 4;
+   
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/chunksMapImg.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr7 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 6  / 11;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/ChunksLearing.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr8 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 4 / 8;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/DashboardVY.png');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr9 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 8 / 11;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/chunksMapVYdarkmode.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr10 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 11;
+    grid-row: 1 / 11;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/spotYa/spotYaMockupIphone.png');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+
+
+
+
+
+@media (max-width: 1300px) and (min-width:1070px) {
+    
+    .contentGalleryImg {
+        /* background-color: rgb(246, 127, 255); */
+        margin: auto;
+        margin-top: 60px;
+        display: grid;
+        height: 975px;
+        width: 975px;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 20px;
+    }
+
+    .contentGallery {
+        max-width: 975px;
+        /* width: 100%; */
+        margin: auto;
+        /* display: grid; */
+        margin-bottom: 200px;
+    }
+
+    .menuGallery {
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: row;
+        /* width: 1254.14px; */
+        justify-content: space-between;
+       
+        max-width: 975px;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1070px) and (min-width:875px) {
+    .contentGalleryImg {
+        /* background-color: rgb(246, 127, 255); */
+        margin: auto;
+        margin-top: 60px;
+        display: grid;
+        height: 615px;
+        width: 615px;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 10px;
+    }
+
+    .contentGallery {
+        max-width: 615px;
+        /* width: 100%; */
+        margin: auto;
+        /* display: grid; */
+        margin-bottom: 200px;
+    }
+
+    .menuGallery {
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: row;
+        /* width: 1254.14px; */
+        justify-content: space-between;
+       
+        max-width: 615px;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        
+    }
+
+    .menuGalleryCol a {
+        text-decoration: none;
+        color: black;
+        font-family: 'minionProReg';
+        transform: scale(1, 1.15);
+        font-size: 14px;
+        line-height: 32px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 875px) and (min-width:670px) {
+    .contentGalleryImg {
+        /* background-color: rgb(246, 127, 255); */
+        margin: auto;
+        margin-top: 60px;
+        display: grid;
+        height: 615px;
+        width: 615px;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 10px;
+    }
+
+    .contentGallery {
+        max-width: 615px;
+        /* width: 100%; */
+        margin: auto;
+        /* display: grid; */
+        margin-bottom: 200px;
+    }
+
+    .menuGallery {
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: row;
+        /* width: 1254.14px; */
+        justify-content: space-between;
+       
+        max-width: 615px;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        
+    }
+
+    .menuGalleryCol a {
+        text-decoration: none;
+        color: black;
+        font-family: 'minionProReg';
+        transform: scale(1, 1.15);
+        font-size: 14px;
+        line-height: 32px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 670px) {
+    .contentGalleryImg {
+        /* background-color: rgb(246, 127, 255); */
+        margin: auto;
+        margin-top: 30px;
+        display: grid;
+        height: 350px;
+        width: 350px;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 10px;
+    }
+
+    .contentGallery {
+        max-width: 350px;
+        /* width: 100%; */
+        margin: auto;
+        /* display: grid; */
+        margin-bottom: 70px;
+    }
+
+    .menuGallery {
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 350px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        
+    }
+
+    .menuGalleryCol a {
+        text-decoration: none;
+        color: black;
+        font-family: 'minionProReg';
+        transform: scale(1, 1.15);
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .contentGallery p {
+        font-size: 15px;
+    }
+
+    .contentGallery h1 {
+        font-size: 30px;
+    }
 }
