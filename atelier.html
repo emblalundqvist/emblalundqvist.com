@@ -227,31 +227,9 @@
                 container.style.height = maxHeight + 'px';
             }
     
-            // window.addEventListener('load', () => masonryLayout('#thecolumn'));
             window.addEventListener('load', () => {
-    const container = document.querySelector('#thecolumn');
-    const images = container.querySelectorAll('img');
-
-    let loaded = 0;
-
-    images.forEach(img => {
-        if(img.complete){
-            loaded++;
-        } else {
-            img.addEventListener('load', () => {
-                loaded++;
-                if(loaded === images.length){
-                    masonryLayout('#thecolumn');
-                }
+                setTimeout(() => masonryLayout('#thecolumn'), 100);
             });
-        }
-    });
-
-    // Om alla bilder redan är laddade
-    if(loaded === images.length){
-        masonryLayout('#thecolumn');
-    }
-});
 
             window.addEventListener('resize', () => masonryLayout('#thecolumn'));
         </script>
