@@ -200,6 +200,53 @@
     background-size: cover;
 }
 
+#retroResanBroschyr11 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 1 / 5;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/MalmöStad/MalmöIniLandMockup.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr12 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 5 / 9;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/MalmöStad/MalmöMockupInne.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr13 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 1 / 10;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/MalmöStad/landing_page.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr15 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 11;
+    grid-row: 1 / 11;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/Ägg/mockupÄgg.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
 
 
 
