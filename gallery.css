@@ -248,6 +248,155 @@
     background-size: cover;
 }
 
+#retroResanBroschyr19 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 7;
+    grid-row: 1 / 6;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/sb/Rectangle\ 93.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr20 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 7 / 11;
+    grid-row: 1 / 5;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/sb/IMG_8856\ 3.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr21 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 11;
+    grid-row: 6 / 11;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/sb/Skärmavbild\ 2026-03-17\ kl.\ 14.48.18\ 1.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr22 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 7 / 11;
+    grid-row: 5 / 6;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/sb/Skärmavbild\ 2026-03-17\ kl.\ 15.04.45\ 1.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+span {
+    font-family: 'Miniver';
+}
+
+#retroResanBroschyr23 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 11;
+    grid-row: 6 / 11;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/elDrink/ElDrinkMockupAll\ \(kopia\).jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr24 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/elDrink/negroniMockupSida.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr25 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 1 / 6;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/elDrink/EssMartMockup.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr26 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 7;
+    grid-row: 1 / 6;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/skiposters/SkiposterGalleryMockup.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr27 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 7 / 11;
+    grid-row: 1 / 6;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/skiposters/idenästetRak.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr28 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 4;
+    grid-row: 6 / 10;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/skiposters/SkiposterÅreMockupGolv.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr29 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 4 / 8;
+    grid-row: 6 / 10;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/skiposters/SkiposterSaalbachVägg.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+#retroResanBroschyr30 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 8 / 11;
+    grid-row: 6 / 10;
+
+    /* Bild som bakgrund */
+    background-image: url('img/imgProjects/skiposters/mässaSMjag.jpg');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+}
+
+
 
 
 
