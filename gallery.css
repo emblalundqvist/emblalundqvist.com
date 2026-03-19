@@ -433,9 +433,85 @@ span {
     background-size: cover;
 }
 
+/* #retroResanBroschyr34 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 7 / 11;
+    grid-row: 9 / 11;
 
+    
+    background-image: url('img/imgProjects/ölandBroschyr/tupp.png');
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+} */
 
+/* #retroResanBroschyr35 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 1 / 5;
 
+    
+    background-image: url('img/imgProjects/ölandVykort/mockiiiiiis\ 2.jpg');
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+} */
+
+#retroResanBroschyr36 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 11;
+    grid-row: 1 / 8;
+
+    
+    background-image: url('img/imgProjects/ölandVykort/mockisVykort\ 2.jpg');
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/* #retroResanBroschyr37 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 8 / 11;
+
+    background-image: url('img/imgProjects/ölandVykort/fTölandVykortPlattMockup.jpg');
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+} */
+
+/* #retroResanBroschyr38 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 8 / 11;
+
+    background-image: url('img/imgProjects/ölandVykort/ölandBaksidaPlattMockup.jpg');
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+} */
+
+#retroResanBroschyr39 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 8 / 11;
+
+    background-image: url('img/imgProjects/ölandVykort/ölandIlluMockupPlatt.jpg');
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#retroResanBroschyr40 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 8 / 11;
+
+    background-image: url('img/imgProjects/ölandVykort/ölandFIMockupPlatt.jpg');
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
 
 
 @media (max-width: 1300px) and (min-width:1070px) {
