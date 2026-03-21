@@ -19,6 +19,144 @@
     src: url(font/Miniver-Regular\ \(kopia\).ttf);
 }
 
+
+
+
+
+/* body {
+    background: #111;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  
+
+  /* #carouselContainer {
+    
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+#containerMedTitel {
+    width: 1100px;
+
+}
+
+.carousel-title {
+    
+    color: black; 
+    margin-bottom: 30px; 
+    font-size: 40px;
+    font-family: 'minionProReg';
+    transform: scale(1, 1.15);
+    display: inline-block;
+    font-weight: normal; 
+}
+
+  .carousel {
+    width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    height: 300px; 
+
+  }
+  
+  .track {
+    display: flex;
+    gap: 20px;
+    transform: translateX(0);
+  }
+  
+  .card {
+    flex: 0 0 250px;
+    height: 300px;
+    position: relative;
+  
+    background: #222;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+  }
+
+  
+  
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+    transform-origin: center; 
+
+  }
+
+
+  .card:hover {
+    transform: scale(0.92);
+  }
+  
+
+
+
+  .label {
+    position: absolute;
+    top: -10px;     
+    right: -10px;   
+    background-color: rgba(255, 252, 248, 1);
+    color: rgb(0, 0, 0);
+    border: black solid 0.5px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 10;   
+    font-family: Helvetica;
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+ 
+  .card:hover .label {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    pointer-events: none;
+    overflow: visible; 
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #messageHihi {
     margin-top: 40vh;
     margin-left: 10vw;
@@ -36,7 +174,7 @@ body {
 }
 
 nav {
-    background-color: rgba(255, 252, 248, 0.476) ;
+    
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -50,12 +188,29 @@ nav {
     left: 0px;
     top: 0px;
     z-index: 1;
+
+    /* Transparent + blur */
+    background: rgba(255, 255, 255, 0.2);  /* låg opacity */
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  
+    /* Subtil separation */
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  
+    /* Minimal gradient för lite depth */
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.1),
+      rgba(255,255,255,0.05)
+    );
+  
+    transition: all 0.3s ease;
 }
 
-nav a {
+/* nav a {
     text-decoration: none;
     color: black;
-}
+} */
 
 #navOptionsContainer {
     display: flex;
@@ -65,31 +220,61 @@ nav a {
 
 
 
+
+
 #navName a:hover {
-    background-color: black;
+    background-color: #1C24FF;
     color: white;
 }
 
 #navGallery a:hover {
-    background-color: black;
+    background-color: #1C24FF;
     color: white;
 }
 
 #navAbout a:hover {
-    background-color: black;
+    background-color: #1C24FF;
     color: white;
 }
 
 #navContact a:hover {
-    background-color: black;
+    background-color: #1C24FF;
     color: white;
 }
 
 #navAtelier a:hover {
-    background-color: black;
+    background-color: #1C24FF;
     color: white;
 }
 
+
+
+
+
+/* Alla länkar som knappar */
+nav a {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid rgba(0,0,0,0.3); /* border syns på ljus navbar */
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500; /* normal vikt */
+    transition: all 0.3s ease;
+}
+
+/* Hover-effekt */
+nav a:hover {
+    background: rgba(255, 255, 255, 0.25); /* subtil glas-effekt */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Logon: mindre padding, samma vikt */
+#navName a {
+    padding: 0.3rem 0.6rem;
+    font-weight: 500;
+}
 
 
 
