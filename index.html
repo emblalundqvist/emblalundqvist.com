@@ -69,62 +69,7 @@
 
 
 
-    <!-- <div id="carouselContainer">
-        <div id="containerMedTitel">
-            <h2 class="carousel-title">UX Projects</h2>
-            <div class="carousel" id="carousel">
-                <div class="track" id="track">
-                <div class="card">
-                    <img src="img/imgProjects/mockupChunks.png" alt="Natur">
-                    <div class="label">Chunks</div>
-                </div>
-                <div class="card">
-                    <img src="img/imgProjects/spotYa/SpotYaMockupMobilMultijpg.jpg" alt="Hav">
-                    <div class="label">SpotYa</div>
-                </div>
-                <div class="card">
-                    <img src="img/imgAtelier/retroResanMobilVuMockSvartAT.jpg" alt="Berg">
-                    <div class="label">RetroResan</div>
-                </div>
-                <div class="card">
-                    <img src="img/imgProjects/egg/mockupEgg.jpg" alt="Stad">
-                    <div class="label">Egg!</div>
-                </div>
-                <div class="card">
-                    <img src="img/imgProjects/MalmoStad/MalmoIniLandMockup.jpg" alt="Skog">
-                    <div class="label">Malmöinitiativet</div>
-                </div>
-                </div>
-            </div>
-            
-            <script>
-            const carousel = document.getElementById('carousel');
-            const track = document.getElementById('track');
-            
-            track.innerHTML += track.innerHTML;
-            
-    
-            let position = 0;
-            let speed = 0.3;
-            let isPaused = false;
-            
-            carousel.addEventListener('mouseenter', () => isPaused = true);
-            carousel.addEventListener('mouseleave', () => isPaused = false);
-            
-            function animate() {
-                if (!isPaused) {
-                position += speed;
-                const halfWidth = track.scrollWidth / 2;
-                if (position >= halfWidth) position = 0;
-                track.style.transform = `translateX(-${position}px)`;
-                }
-                requestAnimationFrame(animate);
-            }
-            
-            animate();
-            </script>
-        </div>
-    </div> -->
+  
 
 
 
@@ -400,23 +345,33 @@
 
 
     <footer>
+
+        
         <div id="footerSection">
+            <div class="footerSmallSections">
+                <p>Psst.. <br>bottom found! Clearly someone with good taste. Let’s connect!</p>
+            </div>
+
             <div class="footerSmallSections">
                 <p>Contact Me</p>
                 <p>embla@dotvoid.se</p>
             </div>
             <div class="footerSmallSections">
                 <p>Social Media</p>
-                <p>Instagram - <a href='https://www.instagram.com/emblalun/'>@emblalun</a></p>
+                <p><a href='https://www.linkedin.com/in/embla-lundqvist-a767a3193/'></a>LinkedIn - Embla Lundqvist</a></p>
+                <p><a href='https://www.instagram.com/emblalun/'></a>Instagram - @emblalun</a></p>
             </div>
             <div class="footerSmallSections">
-                <p><a href="index.html">Embla Lundqvist</a></p>
-                <p><a href="gallery.html">Gallery</a></p>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="gallery.html">Projects</a></p>
+                <p><a href="atelier.html">Atelier</a></p>
                 <p><a href="about.html">About</a></p>
                 <p><a href="contact.html">Contact</a></p>
             </div>
             
         </div>
+
+        <div id="namnCursivFooter"></div>
     </footer>
 
 

@@ -32,10 +32,6 @@
 
   }
 
-  .card:hover {
-    transform: scale(0.92);
-  }
-
   .label {
     position: absolute;
     top: -10px;     
@@ -94,6 +90,7 @@
     font-size: 42px;
     font-family: 'minionProReg';
     transform: scale(1, 1.15);
+    
     display: inline-block;
     font-weight: normal;
   }
@@ -843,24 +840,63 @@ nav a:hover {
 /* footer */
 
 footer {
-    height: 450px;
-    background-color: black;
-    color: white;
+    height: 1050px;
+    background-color: rgba(255, 252, 248, 1);
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 300px;
     font-family: 'helRegN';
+    /* font-family: 'Miniver'; */
+    position: relative; 
+    overflow: hidden; /* Viktigt för att "klippa" div:en */ 
+}
+
+
+
+.footerSmallSections {
+    max-width: 200px;
+}
+
+/* .footerSmallSections p:first-child {
+    font-family: Helvetica, sans-serif;
+    font-weight:bold;
+} */
+
+.footerSmallSections:first-child {
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 300px;
+    
+}
+
+.footerSmallSections:first-child p {
+    margin: 0;
 }
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #footerSection {
     display: flex;
-    width: 700px;
+    width: 1200px;
     justify-content: space-between;
+}
+
+#namnCursivFooter {
+    position: absolute;
+    bottom: -250px;           /* Flytta nedåt utanför footern */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    height: 600px;
+    background-image: url(img/Untitled_Artwork\ 12.png);
+    background-size: cover;        /* Täcker hela diven */
+    background-position: center;   /* Centrerar bilden */
+    background-repeat: no-repeat;
 }
 
 
@@ -977,6 +1013,31 @@ footer a {
     }
 
 
+    /* footer */
+
+footer {
+    height: 1050px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+
+
+#namnCursivFooter {
+    position: absolute;
+    bottom: -200px;           /* Flytta nedåt utanför footern */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    height: 600px;
+    background-image: url(img/Untitled_Artwork\ 12.png);
+    background-size: cover;        /* Täcker hela diven */
+    background-position: center;   /* Centrerar bilden */
+    background-repeat: no-repeat;
+}
+
    
 }
 
@@ -1078,6 +1139,71 @@ footer a {
         grid-template-rows: repeat(1, auto); /* 2 rader som anpassar sig efter innehållet */
         margin-top: 60px;
     }
+
+
+    /* footer */
+
+footer {
+    height: 1050px;
+    background-color: rgba(255, 252, 248, 1);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    font-family: 'helRegN';
+    /* font-family: 'Miniver'; */
+    position: relative; 
+    overflow: hidden; /* Viktigt för att "klippa" div:en */ 
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+
+.footerSmallSections {
+    max-width: 200px;
+}
+
+/* .footerSmallSections p:first-child {
+    font-family: Helvetica, sans-serif;
+    font-weight:bold;
+} */
+
+.footerSmallSections:first-child {
+    
+    max-width: 250px;
+    
+}
+
+.footerSmallSections:first-child p {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#footerSection {
+    display: flex;
+    
+    width: 1200px;
+    justify-content: space-between;
+}
+
+#namnCursivFooter {
+    position: absolute;
+    bottom: -200px;           /* Flytta nedåt utanför footern */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    height: 600px;
+    background-image: url(img/Untitled_Artwork\ 12.png);
+    background-size: cover;        /* Täcker hela diven */
+    background-position: center;   /* Centrerar bilden */
+    background-repeat: no-repeat;
+}
 }
 
 
@@ -1229,6 +1355,42 @@ footer a {
     #sFPGalleriInfoTextSectionGrid {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
+    }
+
+
+    footer {
+        height: 950px;
+        background-color: rgba(255, 252, 248, 1);
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        font-family: 'helRegN';
+        /* font-family: 'Miniver'; */
+        position: relative; 
+        overflow: hidden; /* Viktigt för att "klippa" div:en */ 
+    }
+
+    #footerSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 700px;
+        max-width: 300px;
+    }
+
+    #namnCursivFooter {
+        position: absolute;
+        bottom: -130px;           /* Flytta nedåt utanför footern */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        height: 300px;
+        background-image: url(img/Untitled_Artwork\ 12.png);
+        background-size: cover;        /* Täcker hela diven */
+        background-position: center;   /* Centrerar bilden */
+        background-repeat: no-repeat;
     }
 }
 
@@ -1475,12 +1637,7 @@ footer a {
         margin-bottom: 150px;
     }
 
-    #footerSection {
-        width: 300px;
-        flex-direction: column;
-        text-align: center;
-    }
-
+    
     .latestProjectGalleriPost img {
         height: 330px;
         width: auto;
@@ -1574,6 +1731,40 @@ footer a {
         margin-bottom: 40px;
     }
 
+    footer {
+        height: 950px;
+        background-color: rgba(255, 252, 248, 1);
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        font-family: 'helRegN';
+        /* font-family: 'Miniver'; */
+        position: relative; 
+        overflow: hidden; /* Viktigt för att "klippa" div:en */ 
+    }
+
+    #footerSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 700px;
+        max-width: 300px;
+    }
+
+    #namnCursivFooter {
+        position: absolute;
+        bottom: -110px;           /* Flytta nedåt utanför footern */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        height: 250px;
+        background-image: url(img/Untitled_Artwork\ 12.png);
+        background-size: cover;        /* Täcker hela diven */
+        background-position: center;   /* Centrerar bilden */
+        background-repeat: no-repeat;
+    }
     /* Mobilvyn */
 
 
