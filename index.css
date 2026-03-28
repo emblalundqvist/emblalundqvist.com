@@ -20,70 +20,6 @@
 }
 
 
-
-
-
-/* body {
-    background: #111;
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  } */
-  
-  
-
-  /* #carouselContainer {
-    
-    height: 700px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 200px;
-}
-
-#containerMedTitel {
-    width: 1100px;
-
-}
-
-.carousel-title {
-    
-    color: black; 
-    margin-bottom: 30px; 
-    font-size: 40px;
-    font-family: 'minionProReg';
-    transform: scale(1, 1.15);
-    display: inline-block;
-    font-weight: normal; 
-}
-
-  .carousel {
-    width: 1100px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    height: 300px; 
-
-  }
-  
-  .track {
-    display: flex;
-    gap: 20px;
-    transform: translateX(0);
-  }
-  
-  .card {
-    flex: 0 0 250px;
-    height: 300px;
-    position: relative;
-  
-    background: #222;
-    transition: transform 0.3s ease; 
-    transform-origin: center;
-  }
-
-  
   
 
 .card img {
@@ -143,15 +79,188 @@
 
 
 
+/* Section styling */
+.selected-work {
+    padding: 60px 20px;
+    font-family: helvetica, sans-serif;
+    
+  }
+  
+  /* Wrapper för rubrik + kort */
+  .cards-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .cards-wrapper h2 {
+    
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 42px;
+    font-family: 'minionProReg';
+    transform: scale(1, 1.15);
+    display: inline-block;
+    font-weight: normal;
+  }
+  
+  /* Cards container */
+  .cards-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .cards-container a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  /* Card styling */
+  .card {
+    width: 300px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Image wrapper (fyrkant) */
+  .card-image {
+    width: 100%;
+    padding-bottom: 100%; /* fyrkant */
+    overflow: hidden;
+    border-radius: 1px 1px 0 0;
+    position: relative;
+    transition: transform 0.3s ease; /* för hela fyrkanten */
+  }
+  
+  /* Bilden fyller kortet */
+  .card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Hover: hela bild-fyrkanten växer */
+  .card:hover .card-image {
+    transform: scale(1.03);
+  }
+  
+  /* Hover-knappen */
+  .card-hover-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* klickar på hela kortet */
+  }
+
+  .card-hover-btn:hover {
+    background: #1C24FF;
+  }
+  
+  .card:hover .card-hover-btn {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  /* Pilen */
+  .card-hover-btn svg.lucide-arrow-up {
+    width: 24px;
+    height: 24px;
+    stroke: #000000;
+    overflow: visible;
+    transform: rotate(45deg); /* snett uppåt-höger */
+  }
+  
+  /* Card text */
+  .card h3 {
+    margin: 40px 0 12px 0;
+    font-size: 24px;
+    font-family: 'helRegN';
+  }
+  
+  .card p {
+    margin-bottom: 30px;
+    
+    color: #000000;
+    font-family: 'helRegN';
+    line-height: 24px;
+  }
 
 
 
 
 
 
+/* Wrapper som centrerar bara denna sektion */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Hela klickbara området */
+#inRingSectionProjects {
+    position: relative;
+    height: 155px;
+    display: inline-flex; /* tar bara så mycket plats som behövs */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Bilden bakom texten */
+#inRingImgProjects {
+    background-image: url(img/inRing.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 420px;
+    height: 145px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    pointer-events: none; /* gör att musen “går igenom” bilden */
+}
+
+/* Text + pil */
+#inRingSectionProjects h1 {
+    font-size: 25px;
+    font-family: 'minionProReg';
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 1;
+    padding: 30px 60px; /* större klick-/hoveryta */
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Pil-ikon */
+#inRingSectionProjects h1 svg {
+    width: 20px;
+    height: 20px;
+    transform: translateX(0) rotate(90deg); /* startläge pekar höger */
+    transition: transform 0.3s ease;
+}
 
 
-
+#inRingSectionProjects:hover svg {
+    transform: translateX(10px) rotate(90deg); /* pil glider åt höger */
+}
 
 
 
@@ -173,8 +282,12 @@ body {
     position: relative;
 }
 
+
+
+
+
+
 nav {
-    
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -187,7 +300,7 @@ nav {
     right: 0px;
     left: 0px;
     top: 0px;
-    z-index: 1;
+    z-index: 100;
 
     /* Transparent + blur */
     background: rgba(255, 255, 255, 0.2);  /* låg opacity */
@@ -207,10 +320,8 @@ nav {
     transition: all 0.3s ease;
 }
 
-/* nav a {
-    text-decoration: none;
-    color: black;
-} */
+
+
 
 #navOptionsContainer {
     display: flex;
@@ -218,7 +329,20 @@ nav {
     justify-content: space-between;
 }
 
-
+/* Dölj hamburger på desktop */
+#hamburgerBtn {
+    display: none;
+  }
+  
+  
+  
+  #mobileMenu a {
+    font-family: 'helRegN';  /* Matcha ditt typsnitt */
+    font-size: 44px;
+    margin: 20px 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
 
 
 
@@ -252,6 +376,8 @@ nav {
 
 
 /* Alla länkar som knappar */
+
+
 nav a {
     display: inline-block;
     padding: 0.4rem 0.8rem;
@@ -272,7 +398,7 @@ nav a:hover {
 
 /* Logon: mindre padding, samma vikt */
 #navName a {
-    padding: 0.3rem 0.6rem;
+    padding: 0.4rem 0.8rem;
     font-weight: 500;
 }
 
@@ -628,6 +754,7 @@ nav a:hover {
 
 
 #skiposterFirstPage {
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -901,6 +1028,11 @@ footer a {
         right: -112px;
     }
 
+    .cards-wrapper {
+        max-width: 650px;
+        margin: 0 auto;
+      }
+
     #latestProjectCloseUp {
         flex-direction: column;
     }
@@ -964,8 +1096,6 @@ footer a {
 }
 
 
-
-
 @media (max-width: 875px) and (min-width:670px) {
 
     #hSBot h1 {
@@ -996,6 +1126,23 @@ footer a {
         right: 10px;
         
     }
+
+
+    .cards-wrapper {
+        max-width: 350px;
+        margin: 0 auto;
+      }
+
+      .cards-container {
+        flex-direction: column;
+        align-items: center; /* valfri – centrerar korten */
+      }
+
+      .card {
+        width: 100%;
+        max-width: 500px; /* så de inte blir för breda */
+      }
+
 
     #latestProjectGalleriRowGrid {
         display: grid;
@@ -1101,7 +1248,22 @@ footer a {
 }
 
 
-
+/* Desktop */
+@media (min-width: 670px) {
+    #hamburgerBtn {
+      display: none !important;
+    }
+  
+    #mobileMenu {
+      display: none !important; /* säkerställ att mobilmenyn göms */
+    }
+  
+    #navOptionsContainer {
+      display: flex !important; /* visa vanliga länkar */
+      justify-content: flex-end; /* eller left/right enligt din layout */
+      gap: 30px;
+    }
+  }
 
 
 
@@ -1113,7 +1275,7 @@ footer a {
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: row;
         height: 67px;
     }
 
@@ -1158,6 +1320,24 @@ footer a {
         right: 30px;
         
     }
+
+
+
+    .cards-wrapper {
+        max-width: 350px;
+        margin: 0 auto;
+      }
+
+      .cards-container {
+        flex-direction: column;
+        align-items: center; /* valfri – centrerar korten */
+      }
+
+      .card {
+        width: 100%;
+        max-width: 500px; /* så de inte blir för breda */
+      }
+
 
     #latestProjectGalleriContainer {
         margin-top: 0px;
@@ -1413,6 +1593,92 @@ footer a {
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
+    /* Mobilvyn */
+
+
+   
+    /* Visa hamburger */
+
+    /* Fullscreen mobilmeny */
+  #mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #1C24FF;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: center;
+    transition: height 0.4s ease;
+    z-index: 9999;
+  }
+    #hamburgerBtn {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(0,0,0,0.3);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+        padding: 8px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 10000;
+      }
+
+      
+    
+      #hamburgerBtn span {
+        display: block;
+        width: 18px;
+        height: 1.5px;
+        transition: all 0.3s ease;
+      }
+    
+      /* Hamburger -> X animation när öppen */
+      #hamburgerBtn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+       
+      }
+      #hamburgerBtn.active span:nth-child(2) {
+        opacity: 0;
+      }
+      #hamburgerBtn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      
+      }
+    
+      /* Dölj vanliga nav-länkar på mobil */
+      #navOptionsContainer {
+        display: none;
+      }
+    
+      /* Öppen mobilmeny */
+      #mobileMenu.open {
+        height: 100vh;
+      }
+
+      #closeMobileMenu {
+        position: absolute;
+        top: 20px;
+        right: 20px; /* Vänster sida */
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 10000;
+      }
+      
+
+
 }
 
 
