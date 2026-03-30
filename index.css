@@ -29,7 +29,7 @@
     display: block;
     transition: transform 0.3s ease;
     transform-origin: center; 
-
+    border-radius: 10px;
   }
 
   .label {
@@ -113,6 +113,7 @@
     width: 300px;
     position: relative;
     cursor: pointer;
+    
   }
   
   /* Image wrapper (fyrkant) */
@@ -1504,6 +1505,41 @@ footer a {
         margin-top: 0px;
         margin-bottom: 0px;
     }
+
+
+    #inRingImgProjects {
+        background-image: url(img/inRing.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 350px;
+        height: 145px;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        pointer-events: none; /* gör att musen “går igenom” bilden */
+    }
+    
+    /* Text + pil */
+#inRingSectionProjects h1 {
+    font-size: 16px;
+    font-family: 'minionProReg';
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 1;
+    padding: 30px 60px; /* större klick-/hoveryta */
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Pil-ikon */
+#inRingSectionProjects h1 svg {
+    width: 16px;
+    height: 16px;
+    transform: translateX(0) rotate(90deg); /* startläge pekar höger */
+    transition: transform 0.3s ease;
+}
 
    
 
