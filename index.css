@@ -70,138 +70,6 @@
 
 
 
-
-/* GAMMAL */
-
-/* 
-.selected-work {
-    padding: 60px 20px;
-    font-family: helvetica, sans-serif;
-    
-  }
-  
-  
-  .cards-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .cards-wrapper h2 {
-    
-    text-align: left;
-    margin-bottom: 50px;
-    font-size: 42px;
-    font-family: 'minionProReg';
-    transform: scale(1, 1.15);
-    
-    display: inline-block;
-    font-weight: normal;
-  }
-  
-  
-  .cards-container {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  
-  .cards-container a {
-    text-decoration: none;
-    color: #000000;
-  }
-  
- 
-  .card {
-    width: 300px;
-    position: relative;
-    cursor: pointer;
-    
-  }
-  
-  
-  .card-image {
-    width: 100%;
-    padding-bottom: 100%; 
-    overflow: hidden;
-    border-radius: 1px 1px 0 0;
-    position: relative;
-    transition: transform 0.3s ease; 
-  }
-  
- 
-  .card-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  
-  .card:hover .card-image {
-    transform: scale(1.03);
-  }
-  
-  
-  .card-hover-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none; 
-  }
-
-  .card-hover-btn:hover {
-    background: #1C24FF;
-  }
-  
-  .card:hover .card-hover-btn {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-  
- 
-  .card-hover-btn svg.lucide-arrow-up {
-    width: 24px;
-    height: 24px;
-    stroke: #000000;
-    overflow: visible;
-    transform: rotate(45deg); 
-  }
-  
-
-  .card h3 {
-    margin: 40px 0 12px 0;
-    font-size: 24px;
-    font-family: 'helRegN';
-  }
-  
-  .card p {
-    margin-bottom: 30px;
-    
-    color: #000000;
-    font-family: 'helRegN';
-    line-height: 24px;
-  } */
-
-
-/* GAMMAL  STOPP*/
-
-
-
-
-/* NYA */
-
 /* Section styling */
 .selected-work {
     padding: 60px 20px;
@@ -435,125 +303,6 @@ body {
 
 
 
-
-
-/* nav {
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    align-items: center;
-    font-family: helvetica;
-    font-size: 14px;
-    position: fixed;
-    right: 0px;
-    left: 0px;
-    top: 0px;
-    z-index: 100;
-
-    
-    background: rgba(255, 255, 255, 0.2);  
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-  
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-  
-  
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255,255,255,0.1),
-      rgba(255,255,255,0.05)
-    );
-  
-    transition: all 0.3s ease;
-} */
-
-
-
-
-/* #navOptionsContainer {
-    display: flex;
-    width: 450px;
-    justify-content: space-between;
-} */
-
-/* Dölj hamburger på desktop */
-/* #hamburgerBtn {
-    display: none;
-  } */
-  
-  
-  
-  /* #mobileMenu a {
-    font-family: 'helRegN';  
-    font-size: 44px;
-    margin: 20px 0;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  } */
-
-
-
-/* #navName a:hover {
-    background-color: #1C24FF;
-    color: white;
-}
-
-#navGallery a:hover {
-    background-color: #1C24FF;
-    color: white;
-}
-
-#navAbout a:hover {
-    background-color: #1C24FF;
-    color: white;
-}
-
-#navContact a:hover {
-    background-color: #1C24FF;
-    color: white;
-}
-
-#navAtelier a:hover {
-    background-color: #1C24FF;
-    color: white;
-} */
-
-
-
-
-
-/* Alla länkar som knappar */
-
-
-/* nav a {
-    display: inline-block;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid rgba(0,0,0,0.3); 
-    border-radius: 50px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500; 
-    transition: all 0.3s ease;
-}
-
-
-nav a:hover {
-    background: rgba(255, 255, 255, 0.25); 
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-
-#navName a {
-    padding: 0.4rem 0.8rem;
-    font-weight: 500;
-} */
-
-
-
 /* heroSection */
 
 #heroSection {
@@ -748,13 +497,6 @@ nav a:hover {
     padding-top: 120px;
 }
 
-/* .latestProjectGalleriRow {
-    display: flex;
-    flex-direction: row;
-    width: 1224px;
-    justify-content: space-between;
-    margin-bottom: 10px;
-} */
 
 #latestProjectGalleriRowGrid {
     display: grid;
@@ -774,13 +516,6 @@ nav a:hover {
     margin-top: 120px;
 }
 
-/* .latestProjectGalleriInfoText p {
-    font-family: 'helRegL';
-    color: white;
-    font-size: 14px;
-    line-height: 20px;
-    width: 300px;
-} */
 
 #latestProjectGalleriInfoTextSectionGrid {
     display: grid;
@@ -1016,10 +751,7 @@ footer {
     max-width: 200px;
 }
 
-/* .footerSmallSections p:first-child {
-    font-family: Helvetica, sans-serif;
-    font-weight:bold;
-} */
+
 
 .footerSmallSections:first-child {
     font-size: 40px;
@@ -1326,10 +1058,7 @@ footer {
     max-width: 200px;
 }
 
-/* .footerSmallSections p:first-child {
-    font-family: Helvetica, sans-serif;
-    font-weight:bold;
-} */
+
 
 .footerSmallSections:first-child {
     
@@ -1367,6 +1096,8 @@ footer a {
     background-repeat: no-repeat;
 }
 }
+
+
 
 
 @media (max-width: 875px) and (min-width:670px) {
@@ -1479,11 +1210,7 @@ footer a {
         width: 500px;
     }
 
-    /* #latestProjectBigPosterSki {
-        width: 591px;
-        height: 787px;
-        margin: auto;
-    } */
+    
 
 
     #sFPGalleriRowGrid {
@@ -1558,54 +1285,11 @@ footer a {
 }
 
 
-/* Desktop */
-/* @media (min-width: 670px) {
-    #hamburgerBtn {
-      display: none !important;
-    }
-  
-    #mobileMenu {
-      display: none !important; 
-    }
-  
-    #navOptionsContainer {
-      display: flex !important; 
-      justify-content: flex-end; 
-      gap: 30px;
-    }
-  } */
+
 
 
 
 @media (max-width: 670px) {
-
-
-    /* body {
-        min-width: 380px;
-    }
-
-    nav {
-        flex-direction: row;
-        height: 67px;
-    }
-
-    #navOptionsContainer {
-        width: 350px;
-        font-weight: medium;
-        font-size: 12px;
-    }
-
-    #navOptionsContainer p {
-        margin: 0px;
-        margin-bottom: 10px;
-        margin-top: 15px;
-    }
-
-    #navName p {
-        margin: 0px;
-        margin-top: 10px;
-    } */
-
 
 
     #hSBot {
@@ -1631,48 +1315,10 @@ footer a {
         
     }
 
-/* kort orginal */
-/* 
-    .cards-wrapper {
-        max-width: 350px;
-        margin: 0 auto;
-      }
-
-      .cards-container {
-        flex-direction: column;
-        align-items: center; 
-      }
-
-      .card {
-        width: 100%;
-        max-width: 500px; 
-      }
 
 
-    #latestProjectGalleriContainer {
-        margin-top: 0px;
-        padding-top: 40px;
 
-    }
-
-    #latestProjectInfoBox h1 {
-        font-size: 30px; 
-        text-align: center;
-    }
-
-    #latestProjectInfoBox p {
-        text-align: center;
-        max-width: 350px;
-        margin: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    } */
-
-
-    /* kort orginal stopp*/
-
-
-    /* kort NYA*/
+   
 
     .cards-wrapper {
         max-width: 350px;
@@ -1731,7 +1377,7 @@ footer a {
     
     /* Text + pil */
 #inRingSectionProjects h1 {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'minionProReg';
     font-weight: normal;
     display: inline-flex;
@@ -2013,84 +1659,7 @@ footer a {
     /* Mobilvyn */
 
 
-   
-    /* Visa hamburger */
-
-    /* Fullscreen mobilmeny */
-  /* #mobileMenu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #1C24FF;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-    justify-content: center;
-    transition: height 0.4s ease;
-    z-index: 9999;
-  } */
-
-    /* #hamburgerBtn {
-        display: flex;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 1px solid rgba(0,0,0,0.3);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-        cursor: pointer;
-        padding: 8px;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 10000;
-      } */
-
-      
-/*     
-      #hamburgerBtn span {
-        display: block;
-        width: 18px;
-        height: 1.5px;
-        transition: all 0.3s ease;
-      }
-    
-      #hamburgerBtn.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-       
-      }
-      #hamburgerBtn.active span:nth-child(2) {
-        opacity: 0;
-      }
-      #hamburgerBtn.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-      
-      }
-    
-      #navOptionsContainer {
-        display: none;
-      }
-    
-      #mobileMenu.open {
-        height: 100vh;
-      }
-
-      #closeMobileMenu {
-        position: absolute;
-        top: 20px;
-        right: 20px; 
-        background: none;
-        border: none;
-        font-size: 30px;
-        cursor: pointer;
-        z-index: 10000;
-      }
-       */
+  
 
        .cards-wrapper h2 {
         font-size: 24px;
