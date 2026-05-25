@@ -31,6 +31,14 @@ nav {
     transition: all 0.3s ease;
 }
 
+nav #navName a {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-family: helvetica;
+    font-size: 16px;
+    /* font-family: 'Miniver'; */
+}
+
 #navOptionsContainer {
     display: flex;
     width: 450px;
@@ -86,6 +94,10 @@ nav a {
     color: black;
     font-weight: 500; 
     transition: all 0.3s ease;
+}
+
+#navName a {
+    border: none;
 }
 
 

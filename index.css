@@ -20,7 +20,6 @@
 }
 
 
-  
 
 .card img {
     width: 100%;
@@ -69,6 +68,29 @@
 
 
 
+.cardPillContainer {
+   display: flex;
+   flex-direction: row;
+
+}
+
+
+
+.cardPillContainer p {
+    margin: 0;
+    color: #505050;
+    background-color: #EAEAEA;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 1px 12px 1px 12px;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+
+
+
+
 
 /* Section styling */
 .selected-work {
@@ -87,9 +109,9 @@
     
     text-align: left;
     margin-bottom: 50px;
-    font-size: 28px;
-    font-family: 'minionProReg';
-    transform: scale(1, 1.15);
+    font-size: 14px;
+    font-family: 'helRegN';
+    /* transform: scale(1, 1.15); */
     
     display: inline-block;
     font-weight: normal;
@@ -195,6 +217,8 @@
     margin: 0;
     font-size: 74px;
     font-family: 'helRegN';
+    margin-bottom: 14px;
+    letter-spacing: -1px;
   }
   
   .card h1 {
@@ -208,13 +232,21 @@
   }
   
   .card p {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     
     color: #000000;
     font-family: 'helRegN';
     line-height: 24px;
   }
 
+  .card .infoTextCard {
+    
+    margin-top: 24px;
+  }
+
+  .card .viewcaseCardText {
+   color: #00000000;
+  }
 
 /* NYAA  STOPP*/
 
@@ -256,8 +288,8 @@
 
 /* Text + pil */
 #inRingSectionProjects h1 {
-    font-size: 25px;
-    font-family: 'minionProReg';
+    font-size: 16px;
+    font-family: 'helRegL';
     font-weight: normal;
     display: inline-flex;
     align-items: center;
@@ -269,15 +301,169 @@
 
 /* Pil-ikon */
 #inRingSectionProjects h1 svg {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     transform: translateX(0) rotate(90deg); /* startläge pekar höger */
     transition: transform 0.3s ease;
 }
 
 
 #inRingSectionProjects:hover svg {
-    transform: translateX(10px) rotate(90deg); /* pil glider åt höger */
+    transform: translateX(5px) rotate(90deg); /* pil glider åt höger */
+}
+
+
+
+
+/* nyyyy */
+.center-wrapper-psst-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Hela klickbara området */
+#inRingSectionProjects-psst-contact {
+    position: relative;
+    height: 550px;
+    display: inline-flex; /* tar bara så mycket plats som behövs */
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Bilden bakom texten */
+#inRingImgProjects-psst-contact {
+    background-image: url(img/ringar/storRing.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 720px;
+    height: 545px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    pointer-events: none; /* gör att musen “går igenom” bilden */
+}
+
+/* Text */
+#inRingSectionProjects-psst-contact p {
+    font-size: 16px;
+    font-family: 'helRegL';
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+   
+}
+
+#inRingSectionProjects-psst-contact h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'helRegN';
+    line-height: 44px;
+    /* font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1; */
+   
+}
+/* 
+#readMoreAbout-psst-contact {
+    width: 170px;
+    
+    background: linear-gradient(
+    to bottom right,
+    #FF0084,
+    #FF6019
+);
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family:'helRegN';
+    font-size: 14px;
+    border-radius: 23px;
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-flex;
+    transition: all 0.3s ease-in-out;
+    filter: brightness(1.1);
+}
+
+#readMoreAbout-psst-contact:hover {
+   
+    background: linear-gradient(
+    to bottom right,
+    #ffa600,
+    #FF6019
+);
+    
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    filter: brightness(1.1);
+} */
+a {
+    text-decoration: none !important;
+}
+
+#readMoreAbout-psst-contact {
+    margin-top: 30px;
+    width: 170px;
+    height: 46px;
+
+   text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 999px;
+
+    /* background: linear-gradient(
+        to bottom right,
+        #ffa600,
+        #FF6019
+    ); */
+
+    background-color: #000000;
+
+    color: white;
+    font-family: 'helRegN';
+    font-size: 14px;
+    letter-spacing: 0.3px;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#readMoreAbout-psst-contact:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05) saturate(1.1);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+#readMoreAbout-psst-contact:active {
+    transform: translateY(0px) scale(0.98);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+#psst-contact-name {
+    margin-top: 40px;
+    height: 60px;
+    width: 290px;
+    background-image: url(img/ringar/emblaNamnsSkrivstilLiten.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -366,7 +552,7 @@ body {
 
 #hSBot h1 {
     font-family: 'helRegN';
-    font-size: 65px;
+    font-size: 64px;
     line-height: 90px;
     letter-spacing: -0.04em;
     margin: 0;
@@ -565,10 +751,10 @@ body {
 
 #AboutMeLandingPageText h1 {
     font-size: 40px;
-    font-family: 'minionProReg';
-    transform: scale(1, 1.15);
+    font-family: 'helRegN';
+    line-height: 45px;
     display: inline-block;
-    font-weight: normal; 
+    font-weight: bold; 
     margin: 0;
     margin-bottom: 10px;
 }
@@ -614,7 +800,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1C24FF;
+    background-color: #0e0e0e;
     margin-bottom: 150px;
     flex-direction: row;
 }
@@ -733,12 +919,13 @@ body {
 /* footer */
 
 footer {
-    height: 1050px;
-    background-color: rgba(255, 252, 248, 1);
+    margin-top: 100px;
+    height: 750px;
+    background-color: rgb(247, 241, 233);
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
-    padding-top: 300px;
+    padding-top: 200px;
     font-family: 'helRegN';
     /* font-family: 'Miniver'; */
     position: relative; 
@@ -753,16 +940,9 @@ footer {
 
 
 
-.footerSmallSections:first-child {
-    font-size: 40px;
-    line-height: 50px;
-    max-width: 300px;
-    
-}
 
-.footerSmallSections:first-child p {
-    margin: 0;
-}
+
+
 
 footer a {
     text-decoration: none;
@@ -771,7 +951,7 @@ footer a {
 
 #footerSection {
     display: flex;
-    width: 1200px;
+    width: 1000px;
     justify-content: space-between;
 }
 
@@ -790,7 +970,15 @@ footer a {
 }
 
 
-
+#ELladyInRed-footer {
+    background-image: url(img/ELinRed.png);
+    width: 160px;
+    height: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
 
 
 
@@ -1377,8 +1565,8 @@ footer a {
     
     /* Text + pil */
 #inRingSectionProjects h1 {
-    font-size: 18px;
-    font-family: 'minionProReg';
+    font-size: 14px;
+    font-family: 'helRegL';
     font-weight: normal;
     display: inline-flex;
     align-items: center;
@@ -1538,7 +1726,7 @@ footer a {
 
     #instagramBanderoll {
         height: 80px;
-        background-color: #1C24FF;
+        background-color: #000000;
         margin-bottom: 60px;
         flex-direction: row;
         padding-left: 20px;
@@ -1662,7 +1850,7 @@ footer a {
   
 
        .cards-wrapper h2 {
-        font-size: 24px;
+        font-size: 14px;
         margin-bottom: 20px;
        }
 
@@ -1694,6 +1882,127 @@ footer a {
     .card p {
         margin-bottom: 0px;
     }
+
+
+
+
+/* nyyyy */
+.center-wrapper-psst-contact {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Hela klickbara området */
+#inRingSectionProjects-psst-contact {
+    position: relative;
+    height: 280px;
+    display: inline-flex; /* tar bara så mycket plats som behövs */
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Bilden bakom texten */
+#inRingImgProjects-psst-contact {
+    background-image: url(img/ringar/storRing.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 350px;
+    height: 305px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    pointer-events: none; /* gör att musen “går igenom” bilden */
+    margin-top: -20px;
+}
+
+/* Text */
+#inRingSectionProjects-psst-contact p {
+    font-size: 14px;
+    font-family: 'helRegL';
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+   
+}
+
+#inRingSectionProjects-psst-contact h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'helRegN';
+    line-height: 28px;
+    /* font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1; */
+   
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#readMoreAbout-psst-contact {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+
+   text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 999px;
+
+    background: linear-gradient(
+        to bottom right,
+        #ffa600,
+        #FF6019
+    );
+
+    color: white;
+    font-family: 'helRegN';
+    font-size: 14px;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#readMoreAbout-psst-contact:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05) saturate(1.1);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+#readMoreAbout-psst-contact:active {
+    transform: translateY(0px) scale(0.98);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+#psst-contact-name {
+    margin-top: 20px;
+    height: 30px;
+    width: 145px;
+    background-image: url(img/ringar/emblaNamnsSkrivstilLiten.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+
 }
 
 
