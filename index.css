@@ -1227,7 +1227,7 @@ footer {
 
 footer {
     height: 1050px;
-    background-color: rgba(255, 252, 248, 1);
+    
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -1438,7 +1438,7 @@ footer a {
 
     footer {
         height: 950px;
-        background-color: rgba(255, 252, 248, 1);
+        
         color: rgb(0, 0, 0);
         display: flex;
         justify-content: center;
@@ -1812,7 +1812,7 @@ footer a {
 
     footer {
         height: 950px;
-        background-color: rgba(255, 252, 248, 1);
+        
         color: rgb(0, 0, 0);
         display: flex;
         justify-content: center;
@@ -1963,8 +1963,8 @@ a {
 
     background: linear-gradient(
         to bottom right,
-        #ffa600,
-        #FF6019
+        #000000,
+        #000000
     );
 
     color: white;

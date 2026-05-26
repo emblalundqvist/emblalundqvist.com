@@ -6,10 +6,10 @@ mobileMenu.id = 'mobileMenu';
 mobileMenu.innerHTML = `
   <button id="closeMobileMenu">✕</button>
   <a href="index.html">HOME</a>
-  <a href="gallery.html">PROJECTS</a>
+  
   <a href="atelier.html">ATELIER</a>
   <a href="about.html">ABOUT</a>
-  <a href="contact.html">CONTACT</a>
+  
 `;
 document.body.appendChild(mobileMenu);
 
