@@ -213,6 +213,14 @@ body {
     margin-top: 70px;
 }
 
+.mockupRetro {
+    width: 100%;
+    height: 574px;
+    background-image: url(../img/caseStudies/retroResan/MockupRetroresan.jpg);
+    background-size: cover;
+    margin-top: 70px;
+}
+
 
 .back-button {
     position: fixed;
@@ -232,6 +240,9 @@ body {
 .back-button:hover {
     transform: translateX(-3px);
 }
+
+
+
 
 
 
@@ -365,6 +376,11 @@ body {
 
 
 }
+
+
+
+
+
 
 
 
@@ -509,6 +525,10 @@ body {
     line-height: 28px;
 }
 
+
+
+
+
 .stages {
     width: 100%;
     height: 92px;
@@ -532,6 +552,13 @@ body {
     margin-top: 70px;
 }
     
+.mockupRetro {
+    width: 100%;
+    height: 288px;
+    background-image: url(../img/caseStudies/retroResan/MockupRetroresan.jpg);
+    background-size: cover;
+    margin-top: 70px;
+}
     
     
     }
