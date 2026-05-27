@@ -12,32 +12,41 @@
 </head>
 
 <body>
-
-    <nav>
+    <button class="back-button" onclick="goBack()">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="28"
+             height="28"
+             viewBox="0 0 24 24"
+             fill="none"
+             stroke="black"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+    
+            <path d="M19 12H5"></path>
+            <path d="M12 19l-7-7 7-7"></path>
+        </svg>
+    </button>
+    <!-- <nav>
         <div id="navName">
             <p><a href='../index.html'>EMBLA LUNDQVIST</a></p>
         </div>
 
         <div id="navOptionsContainer">
             
-            <!-- <div id="navGallery">
-                <p><a href="gallery.html">PROJECTS</a></p>
-            </div> -->
+          
 
             <div id="navAtelier">
                 <p><a href="../atelier.html">ATELIER</a></p>
             </div>
 
-            <!-- <div id="navAbout">
-                <p><a href="about.html">ABOUT</a></p>
-            </div> -->
-
+           
             <div id="navContact">
                 <p><a href='../contact.html'>CONTACT</a></p>
             </div>
         </div>
 
-         <!-- Hamburger knapp, syns endast på mobil -->
+  
     <div id="hamburgerBtn">
         <span></span>
         <span></span>
@@ -47,7 +56,7 @@
 
     
 
-    </nav>
+    </nav> -->
 
 
 
@@ -190,7 +199,7 @@
 
 
 
-    <div class="center-wrapper-psst-contact">
+    <!-- <div class="center-wrapper-psst-contact">
         <div id="inRingSectionProjects-psst-contact">
             <div id="inRingImgProjects-psst-contact"></div>
             
@@ -205,7 +214,7 @@
             <div id="psst-contact-name"></div>
            
         </div>
-    </div>
+    </div> -->
 
     <footer>
 
@@ -234,6 +243,13 @@
 
         <div id="namnCursivFooter"></div>
     </footer>
+
+    <script> 
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
     <script src="../index.js"></script>
 </body>
 
