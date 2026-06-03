@@ -39,6 +39,8 @@ body {
     pointer-events: none;
 }
 
+
+
 /* TEXTEN */
 .text-contentYALLA {
     position: relative;
@@ -72,6 +74,7 @@ body {
     margin-top: 10px;
 }
 
+
 .caseStudies-cate {
     display: flex;
     flex-direction: row;
@@ -103,7 +106,6 @@ body {
 }
 
 
-
 .caseStudiesTopImg {
     /* background-color: rgb(246, 127, 255); */
     margin: auto;
@@ -118,6 +120,9 @@ body {
 
 
 
+
+
+/* BILDER för spotYa */
 
 
 #retroResanBroschyr1 {
@@ -167,6 +172,11 @@ body {
 }
 
 
+
+
+
+
+
 .textCaseStudies {
     max-width: 700px;
     margin: auto;
@@ -189,6 +199,12 @@ body {
     font-size: 16px;
     line-height: 28px;
 }
+
+
+
+
+
+
 
 .stages {
     width: 100%;
@@ -222,25 +238,55 @@ body {
 }
 
 
+
+
+
+
 .back-button {
     position: fixed;
-    top: 40px;
-    left: 40px;
+    top: 30px;
+    left: 19px;
     z-index: 9999;
-
-    background: transparent;
-    border: none;
+  
+    /* Storlek & form */
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-
-    padding: 8px;
-
-    transition: transform 0.2s ease;
-}
-
-.back-button:hover {
+  
+    /* Liquid glass */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 0.8px solid rgba(55, 55, 55, 0.35);
+    box-shadow:
+      0 4px 16px rgba(0, 0, 0, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  
+    /* Pil-färg */
+    color: rgba(0, 0, 0, 0.9);
+  
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .back-button:hover {
     transform: translateX(-3px);
-}
-
+    background: rgba(255, 255, 255, 0.22);
+    box-shadow:
+      0 6px 20px rgba(0, 0, 0, 0.16),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+  }
+  
+  .back-button:active {
+    transform: translateX(-1px) scale(0.95);
+    background: rgba(255, 255, 255, 0.1);
+  }
 
 
 
@@ -268,19 +314,7 @@ body {
 
 /* bilden bakom */
 #inRingImgProjects-psst-contactYALLA {
-    background-image: url(../img/ringar/caseStudieRing.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    width: 740px;
-    height: 610px;
-
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    pointer-events: none;
-    opacity: 0;
+    display: none;
     
 }
 
@@ -405,19 +439,7 @@ body {
     
     /* bilden bakom */
     #inRingImgProjects-psst-contactYALLA {
-        background-image: url(../img/ringar/caseStudieRing.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    
-        width: 740px;
-        height: 610px;
-    
-        position: absolute;
-        top: 0;
-        z-index: 0;
-        pointer-events: none;
-        opacity: 0;
+        display: none;
         
     }
     
