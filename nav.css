@@ -60,27 +60,27 @@ nav #navName a {
 
 
   #navName a:hover {
-    background-color: #1C24FF;
+    background-color: #000000;
     color: white;
 }
 
 #navGallery a:hover {
-    background-color: #1C24FF;
+    background-color: #ff1c73;
     color: white;
 }
 
 #navAbout a:hover {
-    background-color: #1C24FF;
+    background-color: #ff1c73;
     color: white;
 }
 
 #navContact a:hover {
-    background-color: #1C24FF;
+    background-color: #000000;
     color: white;
 }
 
 #navAtelier a:hover {
-    background-color: #1C24FF;
+    background-color: #000000;
     color: white;
 }
 
@@ -163,7 +163,7 @@ nav a:hover {
         left: 0;
         width: 100%;
         height: 0;
-        background-color: #1C24FF;
+        background-color: #0b0b0b;
         overflow: hidden;
         display: flex;
         flex-direction: column;

@@ -14,21 +14,75 @@
 }
 
 
+/* Bilder i gridet */
 
-
-
-
-
-#SpotYa1 {
+#gameOfCodes1 {
     border: 0.2px solid rgba(0, 0, 0, 0.256);
-    grid-column: 1 / 11;
-    grid-row: 1 / 11;
-
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
+   
     /* Bild som bakgrund */
-    background-image: url('../img/imgProjects/spotYa/SpotYaMockupMobilMultijpg.jpg');
+    background-image: url('../img/imgProjects/mockupChunks.png');
     background-position: center;  /* centrerar bilden */
     background-repeat: no-repeat; /* upprepar inte */
     background-size: cover;
+
+    border-radius: 5px;
+}
+
+#gameOfCodes2 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 1 / 4;
+   
+    /* Bild som bakgrund */
+    background-image: url('../img/imgProjects/chunksMapImg.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+
+    border-radius: 5px;
+}
+
+#gameOfCodes3 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 6 / 11;
+   
+    /* Bild som bakgrund */
+    background-image: url('../img/imgProjects/ChunksLearing.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+
+    border-radius: 5px;
+}
+
+#gameOfCodes4 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 4 / 8;
+   
+    /* Bild som bakgrund */
+    background-image: url('../img/imgProjects/DashboardVY.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+
+    border-radius: 5px;
+}
+
+#gameOfCodes5 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 8 / 11;
+   
+    /* Bild som bakgrund */
+    background-image: url('../img/imgProjects/chunksMapVYdarkmode.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+
     border-radius: 5px;
 }
 
