@@ -419,6 +419,17 @@
         <h1>Check out my Instagram to see what I’m drawing right now! <a href='https://www.instagram.com/emblalun/'>@emblalun</a></h1>    
     </div>
 
+    <!-- HÄR SKA CIRKEL SECTIONEN VARA -->
+    <div class="atelier-ring-section">
+        <a href="atelier.html" class="atelier-ring-link">
+            <div class="atelier-ring-spinner" id="atelierSpinner"></div>
+            <div class="atelier-ring-text">
+                <p>Take a look inside my brain</p>
+                <p class="atelier-ring-cta">Atelier</p>
+            </div>
+        </a>
+    </div>
+
 
     <!-- <div class="center-wrapper-psst-contact">
         <div  id="inRingSectionProjects-psst-contact">
@@ -677,6 +688,164 @@
     function closeWip() {
         document.getElementById('wipOverlay').classList.remove('visible');
     }
+
+
+    function buildAtelierRing() {
+    const spinner = document.getElementById('atelierSpinner');
+    if (!spinner) return;
+
+    const images = [
+        'img/imgAtelier/skipostersVTPngAT.jpg',
+        'img/imgAtelier/cphStrutMockupAT.jpg',
+        'img/imgAtelier/drinkElpostersDONEaT.jpg',
+        'img/imgAtelier/skipostersSTantonAT.jpg',
+        'img/imgAtelier/drawingDancingQ2EmblaAT.jpg',
+        'img/imgAtelier/gameOfChunksLilaAT.jpg',
+        'img/imgAtelier/drinkElpostersDONE2AT.jpg',
+        'img/imgAtelier/paintingElAT.jpg',
+        'img/imgAtelier/drinkElpostersDONE3AT.jpg',
+        'img/imgAtelier/skipostersValdAT.jpg',
+        'img/imgAtelier/tovaCopenGulPosterAT.jpg',
+        'img/imgAtelier/duneCoverDesignBauhausElAT.jpg',
+        'img/imgAtelier/skipostersZermattAT.jpg',
+        'img/imgAtelier/drinkElpostersDONE5AT.jpg',
+        'img/imgAtelier/dancingQ1AT.jpg',
+        'img/imgAtelier/ElDrinkMockupEspAT.jpg',
+        'img/imgAtelier/paintingParisEmblaAT.jpg',
+        'img/imgAtelier/kattOgaDamBlåGulAT.jpg',
+        'img/imgAtelier/matteSkissAT.jpg',
+        'img/imgAtelier/spotYaGameVyMobilAT.jpg',
+        'img/imgAtelier/drawingHastEmblaAT.jpg',
+        'img/imgAtelier/paintingElRödAT.jpg',
+        'img/imgAtelier/skipostersÅreAT.jpg',
+        'img/imgAtelier/RetroResanBroschyr1BeigeAt.jpg',
+        'img/imgAtelier/drinkElpostersDONE8AT.jpg',
+        'img/imgAtelier/duneCoverDesignHelElAT.jpg',
+        'img/imgAtelier/drinkElpostersDONE9AT.jpg',
+        'img/imgAtelier/dancingQBlåBildAT.jpg',
+        'img/imgAtelier/copStrutPosterAT.jpg',
+        'img/imgAtelier/retroResanBroschyrBeige2AT.jpg',
+        'img/imgAtelier/RetroResanKartaAT.jpg',
+        'img/imgAtelier/retroResanMobilVuMockSvartAT.jpg',
+        'img/imgAtelier/tovaCopenRosaAT.jpg',
+        'img/imgAtelier/skipostersCerviniaAT.jpg',
+        'img/imgAtelier/drinkElpostersDONE6AT.jpg',
+        'img/imgAtelier/drawingTjejorSkalAT.jpg',
+        'img/imgAtelier/skipostersChamonixAT.jpg',
+        'img/imgAtelier/drawingCafeEmblaAT.jpg',
+        'img/imgAtelier/skipostersSalbachAT.jpg',
+        'img/imgAtelier/spotYaMobilVyGoAt.jpg',
+        'img/imgAtelier/drawingJazzNightEmblaAT.jpg',
+    ];
+
+    function getSize() {
+        const w = window.innerWidth;
+        if (w <= 670) return { radius: 125, imgSize: 46 };
+        if (w <= 875) return { radius: 165, imgSize: 55 };
+        if (w <= 1070) return { radius: 210, imgSize: 62 };
+        return { radius: 255, imgSize: 70 };
+    }
+
+    let mouseX = 0;
+    let mouseY = 0;
+    let isHovering = false;
+
+    spinner.addEventListener('mousemove', (e) => {
+        const rect = spinner.getBoundingClientRect();
+        mouseX = e.clientX - rect.left;
+        mouseY = e.clientY - rect.top;
+        isHovering = true;
+    });
+
+    spinner.addEventListener('mouseleave', () => {
+        isHovering = false;
+    });
+
+    function build() {
+        spinner.innerHTML = '';
+        const { radius, imgSize } = getSize();
+        const count = images.length;
+
+        images.forEach((src, i) => {
+            const angle = (i / count) * 360;
+            const rad = (angle * Math.PI) / 180;
+            const x = Math.cos(rad) * radius;
+            const y = Math.sin(rad) * radius;
+
+            const img = document.createElement('img');
+            img.src = src;
+            img.dataset.baseX = x;
+            img.dataset.baseY = y;
+            img.dataset.angle = angle;
+
+            img.style.cssText = `
+                position: absolute;
+                width: ${imgSize}px;
+                height: ${imgSize}px;
+                object-fit: cover;
+                border-radius: 3px;
+                left: calc(50% + ${x}px - ${imgSize / 2}px);
+                top: calc(50% + ${y}px - ${imgSize / 2}px);
+                transform: rotate(${angle + 90}deg);
+                transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                            height 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                            left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                            top 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            `;
+            spinner.appendChild(img);
+        });
+    }
+
+    function tickHover() {
+        const imgs = spinner.querySelectorAll('img');
+        const spinnerRect = spinner.getBoundingClientRect();
+        const { imgSize } = getSize();
+
+        imgs.forEach(img => {
+            const x = parseFloat(img.dataset.baseX);
+            const y = parseFloat(img.dataset.baseY);
+
+            const imgRect = img.getBoundingClientRect();
+            const imgCenterX = imgRect.left + imgRect.width / 2 - spinnerRect.left;
+            const imgCenterY = imgRect.top + imgRect.height / 2 - spinnerRect.top;
+
+            const dist = isHovering
+                ? Math.hypot(mouseX - imgCenterX, mouseY - imgCenterY)
+                : 9999;
+
+            const threshold = imgSize * 0.85;
+            const grow = imgSize * 1.3;
+
+            if (dist < threshold) {
+                img.style.width = grow + 'px';
+                img.style.height = grow + 'px';
+                img.style.left = `calc(50% + ${x}px - ${grow / 2}px)`;
+                img.style.top = `calc(50% + ${y}px - ${grow / 2}px)`;
+                img.style.zIndex = '20';
+            } else {
+                img.style.width = imgSize + 'px';
+                img.style.height = imgSize + 'px';
+                img.style.left = `calc(50% + ${x}px - ${imgSize / 2}px)`;
+                img.style.top = `calc(50% + ${y}px - ${imgSize / 2}px)`;
+                img.style.zIndex = '';
+            }
+        });
+
+        requestAnimationFrame(tickHover);
+    }
+
+    build();
+    tickHover();
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(build, 150);
+    });
+}
+
+buildAtelierRing();
+    
     </script>
 
 </body>
