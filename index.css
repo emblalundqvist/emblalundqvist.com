@@ -15,6 +15,16 @@
 }
 
 @font-face {
+    font-family: 'helRegB';
+    src: url(font/HelveticaNeueBold.otf);
+}
+
+@font-face {
+    font-family: 'helRegM';
+    src: url(font/HelveticaNeueMedium.otf);
+}
+
+@font-face {
     font-family: 'Miniver';
     src: url(font/Miniver-Regular\ \(kopia\).ttf);
 }
@@ -292,7 +302,7 @@
     justify-content: space-between;
     gap: 60px;
     width: 100%;
-    border-top: 1px  black solid;
+    border-top: 1px  rgb(177, 177, 177) solid;
     padding-top: 30px;
     padding-bottom: 30px;
     transition: transform 0.3s ease;
@@ -371,10 +381,10 @@
   /* Card text */
   .card h3 {
     margin: 0;
-    font-size: 74px;
+    font-size: 52px;
     font-family: 'helRegN';
     margin-bottom: 14px;
-    letter-spacing: -1px;
+
   }
   
   .card h1 {
@@ -521,48 +531,8 @@
     font-size: 36px;
     font-family: 'helRegN';
     line-height: 44px;
-    /* font-weight: normal;
-    display: inline-flex;
-    align-items: center;
-    z-index: 1; */
-   
-}
-/* 
-#readMoreAbout-psst-contact {
-    width: 170px;
-    
-    background: linear-gradient(
-    to bottom right,
-    #FF0084,
-    #FF6019
-);
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family:'helRegN';
-    font-size: 14px;
-    border-radius: 23px;
-    margin-top: 10px;
-    text-decoration: none;
-    display: inline-flex;
-    transition: all 0.3s ease-in-out;
-    filter: brightness(1.1);
 }
 
-#readMoreAbout-psst-contact:hover {
-   
-    background: linear-gradient(
-    to bottom right,
-    #ffa600,
-    #FF6019
-);
-    
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    filter: brightness(1.1);
-} */
 a {
     text-decoration: none !important;
 }
@@ -580,11 +550,7 @@ a {
 
     border-radius: 999px;
 
-    /* background: linear-gradient(
-        to bottom right,
-        #ffa600,
-        #FF6019
-    ); */
+  
 
     background-color: #000000;
 
@@ -1135,7 +1101,112 @@ footer a {
     background-position: center;
    
 }
+/* Atelier teaser */
 
+#atelierTeaser {
+    width: 100%;
+    background-color: rgba(10, 10, 10, 1);
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 140px max(20px, calc((100% - 1000px) / 2));
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+#atelierTeaserText {
+    margin-top: 30px;
+    max-width: 520px;
+    min-width: 0;
+}
+
+#atelierTeaserText h2 {
+    margin: 0 0 14px;
+    font-family: 'helRegM';
+    font-weight: normal;
+    font-size: 52px;
+    color: rgb(255, 252, 248);
+}
+
+#atelierTeaserText p {
+    margin: 0 0 40px;
+    font-family: 'helRegN';
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 24px;
+    color: #b5b5b5;
+}
+
+#atelierTeaserButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 36px;
+    border-radius: 999px;
+    background-color: rgb(235 232 227);
+    color: #000000;
+    font-family: 'helRegN';
+    font-size: 14px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#atelierTeaserButton:hover {
+    transform: translateX(4px);
+    box-shadow: 0 8px 18px rgba(255, 255, 255, 0.12);
+}
+
+#atelierTeaserImg {
+    width: 360px;
+    height: 285px;
+    flex-shrink: 0;
+    background-image: url(img/preeTittilur.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 1070px) {
+    #atelierTeaser {
+        gap: 40px;
+        padding: 140px max(20px, calc((100% - 650px) / 2));
+    }
+    #atelierTeaserImg {
+        width: 280px;
+        height: 222px;
+    }
+}
+
+@media (max-width: 875px) {
+    #atelierTeaser {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 100px max(20px, calc((100% - 650px) / 2));
+    }
+    #atelierTeaserImg {
+        width: 100%;
+        height: 400px;
+        background-position: left center;
+    }
+}
+
+@media (max-width: 670px) {
+    #atelierTeaser {
+        padding: 70px max(20px, calc((100% - 350px) / 2));
+        margin-bottom: 60px;
+    }
+    #atelierTeaserText h2 {
+        font-size: 50px;
+    }
+    #atelierTeaserText p {
+        font-size: 15px;
+    }
+    #atelierTeaserImg {
+        width: 100%;
+        height: 260px;
+    }
+}
 
 
 
@@ -1319,7 +1390,7 @@ footer {
       }
 
     .card h3 {
-        font-size: 64px;
+        font-size: 52px;
     }
 
     #latestProjectCloseUp {
@@ -1489,7 +1560,7 @@ footer a {
       
 
       .card h3 {
-        font-size: 64px;
+        font-size: 52px;
     }
 
 
@@ -2017,7 +2088,7 @@ footer a {
         justify-content: space-between;
         gap: 20px;
         width: 100%;
-        border-top: 1px  black solid;
+        border-top: 1px  rgb(177, 177, 177) solid;
         padding-top: 30px;
         padding-bottom: 30px;
         transition: transform 0.3s ease;
