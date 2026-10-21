@@ -268,7 +268,31 @@
            
         </div>
     </div> -->
+<!-- LET'S TALK -->
+<section id="letsTalkSection">
+    <div id="letsTalkInner">
+        <p id="letsTalkPsst">Psst… bottom found. Clearly someone with taste.</p>
 
+        <button type="button" id="letsTalkBtn" aria-haspopup="dialog">
+            <span>Let’s talk</span>
+            <span id="letsTalkArrow">→</span>
+        </button>
+
+        <div id="letsTalkLine"></div>
+    </div>
+</section>
+
+<!-- LET'S CONNECT POPUP -->
+<div class="wip-overlay" id="connectOverlay" aria-hidden="true">
+    <div class="wip-popup" id="connectPopup" role="dialog" aria-modal="true" aria-labelledby="connectTitle">
+        <h3 id="connectTitle">Let’s connect</h3>
+        <div class="connect-actions">
+            <a href="mailto:embla@dotvoid.se" class="connect-btn connect-btn-primary">Email me</a>
+            <a href="https://www.linkedin.com/in/embla-lundqvist-a767a3193/" target="_blank" rel="noopener" class="connect-btn">LinkedIn</a>
+        </div>
+        <button type="button" id="connectClose" class="connect-close">Close</button>
+    </div>
+</div>
 
     <footer>
 
@@ -343,4 +367,36 @@
         
 
     <script src="index.js"></script>
+
+    <script>
+        (function () {
+            const overlay = document.getElementById('connectOverlay');
+            const openBtn = document.getElementById('letsTalkBtn');
+            const closeBtn = document.getElementById('connectClose');
+
+            function openConnect() {
+                overlay.classList.add('visible');
+                overlay.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeConnect() {
+                overlay.classList.remove('visible');
+                overlay.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+                openBtn.focus();
+            }
+
+            openBtn.addEventListener('click', openConnect);
+            closeBtn.addEventListener('click', closeConnect);
+
+            overlay.addEventListener('click', function (e) {
+                if (e.target === overlay) closeConnect();
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && overlay.classList.contains('visible')) closeConnect();
+            });
+        })();
+    </script>
 </body>
