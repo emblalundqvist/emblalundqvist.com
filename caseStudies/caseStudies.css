@@ -584,3 +584,13 @@ body {
     
     
     }
+
+
+
+    .back-button {
+        
+        top: 70px !important;
+        bottom: auto !important;
+        transform: none !important;
+        z-index: 5 !important;
+    }

@@ -231,3 +231,181 @@ nav a:hover {
       }
       
   }
+
+
+  /* Hamburgermeny (mobil) – delas av alla sidor */
+
+#hamburgerBtn,
+#mobileMenu {
+    display: none;
+}
+
+@media (max-width: 669px) {
+
+    #navOptionsContainer {
+        display: none !important;
+    }
+
+    #hamburgerBtn {
+        display: block;
+        position: fixed;
+        top: 12px;
+        right: 20px;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        gap: 0;
+        border-radius: 50%;
+        background-color: rgba(255, 252, 248, 1);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        z-index: 10000;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    #hamburgerBtn span {
+        position: absolute;
+        left: 10px;
+        width: 20px;
+        height: 2px;
+        margin: 0;
+        border-radius: 2px;
+        background-color: #000000;
+        transition: transform 0.35s ease, opacity 0.2s ease, top 0.35s ease;
+    }
+
+    #hamburgerBtn span:nth-child(1) { top: 13px; }
+    #hamburgerBtn span:nth-child(2) { top: 20px; }
+    #hamburgerBtn span:nth-child(3) { top: 27px; }
+
+    #hamburgerBtn.open span:nth-child(1) {
+        top: 20px;
+        transform: rotate(45deg);
+    }
+
+    #hamburgerBtn.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburgerBtn.open span:nth-child(3) {
+        top: 20px;
+        transform: rotate(-45deg);
+    }
+
+    #mobileMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        padding: 0 28px;
+        overflow: hidden;
+        background-color: #0a0a0a;
+        z-index: 99;
+        transform: translateY(-100%);
+        visibility: hidden;
+        transition: transform 0.55s cubic-bezier(0.7, 0, 0.2, 1), visibility 0s linear 0.55s;
+    }
+
+    #mobileMenu.open {
+        height: 100vh;
+        height: 100dvh;
+        transform: translateY(0);
+        visibility: visible;
+        transition: transform 0.55s cubic-bezier(0.7, 0, 0.2, 1), visibility 0s;
+    }
+
+    #mobileMenuList {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #mobileMenuList li {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    #mobileMenu.open #mobileMenuList li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #mobileMenu.open #mobileMenuList li:nth-child(1) { transition-delay: 0.25s; }
+    #mobileMenu.open #mobileMenuList li:nth-child(2) { transition-delay: 0.32s; }
+    #mobileMenu.open #mobileMenuList li:nth-child(3) { transition-delay: 0.39s; }
+    #mobileMenu.open #mobileMenuList li:nth-child(4) { transition-delay: 0.46s; }
+    #mobileMenu.open #mobileMenuList li:nth-child(5) { transition-delay: 0.53s; }
+
+    #mobileMenuList a {
+        display: block;
+        margin: 0;
+        padding: 6px 0;
+        font-family: 'helRegN';
+        font-size: 56px;
+        line-height: 1.15;
+        letter-spacing: -0.04em;
+        color: rgb(255, 252, 248);
+        text-decoration: none;
+    }
+
+    body.menu-open nav {
+        background: transparent;
+        background-image: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border-bottom-color: transparent;
+    }
+
+    body.menu-open #navName a {
+        color: rgb(255, 252, 248);
+    }
+
+    nav {
+      transition: transform 0.35s ease, background 0.3s ease;
+  }
+
+  nav.nav-hidden {
+      transform: translateY(-100%);
+  }
+}
+
+@media (max-width: 669px) {
+
+  /* vanligt läge: frostat glas som navbaren */
+  #hamburgerBtn {
+      background-color: rgba(255, 255, 255, 0.2);
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.05)
+      );
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      box-shadow: none;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  #hamburgerBtn:active {
+      background-color: rgba(255, 255, 255, 0.35);
+  }
+
+  /* öppen meny: ingen bakgrund, bara tunn ljus kant och vitt kryss */
+  #hamburgerBtn.open,
+  body.menu-open #hamburgerBtn {
+      background-color: transparent !important;
+      background-image: none !important;
+      border-color: rgba(255, 252, 248, 0.3) !important;
+      box-shadow: none !important;
+  }
+
+  #hamburgerBtn.open span,
+  body.menu-open #hamburgerBtn span {
+      background-color: rgb(255, 252, 248) !important;
+  }
+}
