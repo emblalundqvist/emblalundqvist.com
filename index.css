@@ -276,11 +276,12 @@
     text-align: left;
     margin-bottom: 50px;
     font-size: 14px;
-    font-family: 'helRegN';
+    font-family: 'helRegB';
     /* transform: scale(1, 1.15); */
     
     display: inline-block;
     font-weight: normal;
+    color: coral;
   }
   
   
@@ -310,7 +311,7 @@
   }
 
   .cards-container a:last-child .card {
-    border-bottom: 1px solid black;
+    border-bottom: 1px rgb(177, 177, 177) solid;
   }
 
   
@@ -1043,7 +1044,7 @@ body {
 footer {
     margin-top: 100px;
     height: 750px;
-    background-color: rgb(247, 241, 233);
+    background-color: rgb(225 225 225);
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -1105,13 +1106,14 @@ footer a {
 
 #atelierTeaser {
     width: 100%;
-    background-color: rgba(10, 10, 10, 1);
+    background-color: rgba(20, 20, 20, 1);
     display: flex;
     justify-content: space-between;
     gap: 60px;
     padding: 140px max(20px, calc((100% - 1000px) / 2));
     margin-bottom: 100px;
     overflow: hidden;
+    margin-top: 150px;
 }
 
 #atelierTeaserText {
@@ -1124,7 +1126,7 @@ footer a {
     margin: 0 0 14px;
     font-family: 'helRegM';
     font-weight: normal;
-    font-size: 52px;
+    font-size: 64px;
     color: rgb(255, 252, 248);
 }
 
@@ -2236,3 +2238,152 @@ a {
 
 
 
+/* Let's talk */
+
+#letsTalkSection {
+    width: 100%;
+    background-color: rgba(255, 252, 248, 1); /* ändra fritt, påverkar bara denna sektion */
+    padding: 140px max(20px, calc((100% - 1000px) / 2)) 0;
+}
+
+#letsTalkPsst {
+    margin: 0 0 10px;
+    font-family: 'minionProReg';
+    transform: scaleX(0.7);
+    font-style: italic;
+    font-size: 20px;
+    color: coral;
+    transform: scaleX(0.8);
+    transform-origin: left center;
+    
+}
+
+#letsTalkBtn {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 28px;
+    padding: 0 0 8px;
+    margin: 0;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #141414;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: 'helRegM';
+    font-size: 84px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: #141414;
+}
+
+#letsTalkArrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#letsTalkBtn:hover #letsTalkArrow,
+#letsTalkBtn:focus-visible #letsTalkArrow {
+    transform: translateX(14px);
+}
+
+#letsTalkLine {
+    margin-top: 110px;
+    height: 1px;
+    background-color: rgb(217, 213, 206);
+}
+
+/* Popup-innehåll (använder dina .wip-overlay / .wip-popup) */
+
+#connectPopup {
+    min-width: 320px;
+}
+
+#connectPopup h3 {
+    margin: 0 0 28px;
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: -0.03em;
+}
+
+.connect-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.connect-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'helRegN';
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.connect-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.connect-btn-primary {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.connect-btn-primary:hover {
+    background-color: #2a2a2a;
+}
+
+.connect-close {
+    margin-top: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'helRegN';
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.connect-close:hover {
+    color: #000000;
+}
+
+/* Samma bredder som .cards-wrapper */
+
+@media (max-width: 1070px) {
+    #letsTalkSection {
+        padding: 110px max(20px, calc((100% - 650px) / 2)) 0;
+    }
+    #letsTalkBtn {
+        font-size: 68px;
+    }
+}
+
+@media (max-width: 670px) {
+    #letsTalkSection {
+        padding: 80px max(20px, calc((100% - 350px) / 2)) 0;
+    }
+    #letsTalkPsst {
+        font-size: 16px;
+    }
+    #letsTalkBtn {
+        font-size: 44px;
+        gap: 16px;
+        border-bottom-width: 2px;
+    }
+    #letsTalkLine {
+        margin-top: 70px;
+    }
+    #connectPopup {
+        min-width: 0;
+        width: calc(100vw - 40px);
+        padding: 32px 24px;
+    }
+}

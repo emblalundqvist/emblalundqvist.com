@@ -1,0 +1,3 @@
+Nu gäller det alla kort med data-wip på länken: Egg tracker, M-initiativet, EL drink collection, Öland postcard och Öland weekend. När du gör klart ett case byter du bara <a href="#" data-wip> mot <a href="caseStudies/namn.html">, så går det till sidan i stället.
+
+Popupen för "Let's connect" och "Still brewing" är två separata overlays med egna id:n (connectOverlay och wipOverlay), så de stör inte varandra.

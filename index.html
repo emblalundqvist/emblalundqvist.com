@@ -67,6 +67,11 @@
         </div>
 
 
+
+
+
+
+
     </div>
 
       <section class="selected-work">
@@ -258,7 +263,8 @@
       
            
              <!-- SKIPOSTERS -->
-    <a href="caseStudies/skiposters.html">
+    <!-- <a href="caseStudies/skiposters.html"> -->
+        <a href="#" data-wip>
         <div class="card">
             <div class="textCard">
                 <h3>Skiposters</h3>
@@ -309,7 +315,8 @@
     </a>
 
   <!-- S&B -->
-  <a href="caseStudies/sb.html">
+  <!-- <a href="caseStudies/sb.html"> -->
+    <a href="#" data-wip>
     <div class="card">
         <div class="textCard">
             <h3>S&B</h3>
@@ -415,6 +422,50 @@
     </div>
 
 
+    <!-- LET'S TALK -->
+    <section id="letsTalkSection">
+        <div id="letsTalkInner">
+            <p id="letsTalkPsst">Psst… bottom found. Clearly someone with taste.</p>
+
+            <button type="button" id="letsTalkBtn" aria-haspopup="dialog">
+                <span>Let’s talk</span>
+                <span id="letsTalkArrow">→</span>
+            </button>
+
+            <div id="letsTalkLine"></div>
+        </div>
+    </section>
+
+    <!-- LET'S CONNECT POPUP -->
+    <div class="wip-overlay" id="connectOverlay" aria-hidden="true">
+        <div class="wip-popup" id="connectPopup" role="dialog" aria-modal="true" aria-labelledby="connectTitle">
+            <h3 id="connectTitle">Let’s connect</h3>
+            <div class="connect-actions">
+                <a href="mailto:embla@dotvoid.se" class="connect-btn connect-btn-primary">Email me</a>
+                <a href="https://www.linkedin.com/in/embla-lundqvist-a767a3193/" target="_blank" rel="noopener" class="connect-btn">LinkedIn</a>
+            </div>
+            <button type="button" id="connectClose" class="connect-close">Close</button>
+        </div>
+    </div>
+
+
+
+    <!-- STILL BREWING POPUP -->
+    <div class="wip-overlay" id="wipOverlay" aria-hidden="true">
+        <div class="wip-popup" role="dialog" aria-modal="true" aria-labelledby="wipTitle">
+            <div class="wip-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="#000" aria-hidden="true">
+                    <path d="M12 1.5c.6 4.9 2.6 8.4 6 9.7 1.7.6 3.1.8 4.5.8-1.4 0-2.8.2-4.5.8-3.4 1.300-5.400 4.800-6 9.700-.6-4.900-2.600-8.400-6-9.700-1.700-.6-3.100-.8-4.500-.8 1.400 0 2.800-.2 4.500-.8 3.400-1.300 5.400-4.800 6-9.700z"/>
+                </svg>
+            </div>
+            <h3 id="wipTitle">Still brewing</h3>
+            <p>This case study is still in the works.<br>Check back soon!</p>
+            <button type="button" class="wip-close" id="wipClose">Stäng</button>
+        </div>
+    </div>
+
+
+
 
 
 
@@ -451,8 +502,76 @@
 
   
 
+    <script>
+        (function () {
+            const overlay = document.getElementById('connectOverlay');
+            const openBtn = document.getElementById('letsTalkBtn');
+            const closeBtn = document.getElementById('connectClose');
+
+            function openConnect() {
+                overlay.classList.add('visible');
+                overlay.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeConnect() {
+                overlay.classList.remove('visible');
+                overlay.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+                openBtn.focus();
+            }
+
+            openBtn.addEventListener('click', openConnect);
+            closeBtn.addEventListener('click', closeConnect);
+
+            overlay.addEventListener('click', function (e) {
+                if (e.target === overlay) closeConnect();
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && overlay.classList.contains('visible')) closeConnect();
+            });
+        })();
+    </script>
 
 
+
+<script>
+    (function () {
+        const overlay = document.getElementById('wipOverlay');
+        const closeBtn = document.getElementById('wipClose');
+        const wipLinks = document.querySelectorAll('[data-wip]');
+
+        function openWip() {
+            overlay.classList.add('visible');
+            overlay.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeWip() {
+            overlay.classList.remove('visible');
+            overlay.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        wipLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // stoppar hoppet till "#"
+                openWip();
+            });
+        });
+
+        closeBtn.addEventListener('click', closeWip);
+
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay) closeWip();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && overlay.classList.contains('visible')) closeWip();
+        });
+    })();
+</script>
     
 </body>
 </html>
