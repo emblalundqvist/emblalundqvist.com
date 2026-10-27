@@ -2402,7 +2402,7 @@ a {
 
 #nextCaseLine {
     height: 1px;
-    background-color: #141414;
+    background-color: rgb(217, 213, 206);
 }
 
 #nextCaseRow {
