@@ -2388,3 +2388,114 @@ a {
     }
 }
 
+
+
+
+/* Next case */
+
+#nextCaseSection {
+    width: 100%;
+    background-color: rgba(255, 252, 248, 1);
+    /* samma bredd och marginal som .textCaseStudies: max 700px, 350px på mobil */
+    padding: 100px max(0px, calc((100% - 700px) / 2)) 0;
+}
+
+#nextCaseLine {
+    height: 1px;
+    background-color: #141414;
+}
+
+#nextCaseRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px 30px;
+    padding-top: 24px;
+}
+
+#nextCaseLink {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #141414;
+    cursor: pointer;
+}
+
+#nextCaseLabel {
+    margin-bottom: 14px;
+    font-family: 'minionProReg';
+    font-size: 20px;
+    color: coral;
+    transform: scaleX(0.8);
+    font-style: italic;
+    margin: 0 -6px 10px;
+}
+
+#nextCaseTitle {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 22px;
+    padding: 0 0 8px;
+    border-bottom: 3px solid #141414;
+    font-size: 64px;
+    line-height: 1.05;
+    color: #141414;
+}
+
+#nextCaseArrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#nextCaseLink:hover #nextCaseArrow,
+#nextCaseLink:focus-visible #nextCaseArrow {
+    transform: translateX(12px);
+}
+
+#nextCaseMail {
+    font-family: 'helRegN';
+    font-size: 14px;
+    color: #3c3c3c;
+    padding-bottom: 12px;
+}
+
+#nextCaseMail:hover {
+    text-decoration: underline !important;
+}
+
+/* Samma typografi som "Let's talk" */
+#letsTalkBtn,
+#nextCaseTitle {
+    font-family: 'helRegM';
+    font-weight: normal;
+    letter-spacing: -0.04em;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* samma brytpunkt som caseStudies.css */
+@media (max-width: 700px) {
+    #nextCaseSection {
+        padding: 60px max(0px, calc((100% - 350px) / 2)) 0;
+    }
+    #nextCaseRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    #nextCaseTitle {
+        font-size: 38px;
+        gap: 14px;
+        border-bottom-width: 2px;
+    }
+    #nextCaseLink:hover #nextCaseArrow,
+    #nextCaseLink:focus-visible #nextCaseArrow {
+        transform: translateX(8px);
+    }
+    #nextCaseMail {
+        padding-bottom: 0;
+    }
+}
+
