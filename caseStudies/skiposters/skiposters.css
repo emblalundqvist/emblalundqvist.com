@@ -1,0 +1,311 @@
+
+
+
+.caseStudiesTopImg {
+    /* background-color: rgb(246, 127, 255); */
+    margin: auto;
+    margin-top: 60px;
+    display: grid;
+    height: 700px;
+    width: 700px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+}
+
+
+/* Bilder i gridet */
+
+#gameOfCodes1 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
+   
+    /* Bild som bakgrund */
+    background-image: url('../img/imgProjects/mockupChunks.png');
+    background-position: center;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+
+    border-radius: 5px;
+}
+
+#gameOfCodes2 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 1 / 4;
+   
+    /* Bild som bakgrund */
+    background-image: url('../img/imgProjects/chunksMapImg.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+
+    border-radius: 5px;
+}
+
+#gameOfCodes3 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 1 / 6;
+    grid-row: 6 / 11;
+   
+    /* Bild som bakgrund */
+    background-image: url('../img/imgProjects/ChunksLearing.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+
+    border-radius: 5px;
+}
+
+#gameOfCodes4 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 4 / 8;
+   
+    /* Bild som bakgrund */
+    background-image: url('../img/imgProjects/DashboardVY.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+
+    border-radius: 5px;
+}
+
+#gameOfCodes5 {
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    grid-column: 6 / 11;
+    grid-row: 8 / 11;
+   
+    /* Bild som bakgrund */
+    background-image: url('../img/imgProjects/chunksMapVYdarkmode.png');
+    background-position: top;  /* centrerar bilden */
+    background-repeat: no-repeat; /* upprepar inte */
+    background-size: cover;
+
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.stagesGameOfCodes {
+    width: 100%;
+    height: 125px;
+    background-image: url(imgCaseStudies/gameOfCodes/stagesGoC.png);
+    background-size: cover;
+}
+
+.graphicprofileGoC {
+    width: 100%;
+    height: 577px;
+    background-image: url(imgCaseStudies/gameOfCodes/gP.png);
+    background-size: cover;
+    margin-top: 70px;
+}
+
+
+
+.illuGoC {
+    position: relative;
+    width: 100%;
+    height: 283px;
+    background-image: url(imgCaseStudies/gameOfCodes/illuGoC.png);
+    background-size: cover;
+    margin-top: 70px;
+}
+
+.illuGoC::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(imgCaseStudies/gameOfCodes/illuGoCRosa.png);
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.illuGoC:hover::after {
+    opacity: 1;
+}
+
+
+
+.dashboardGoC {
+    position: relative;
+    width: 100%;
+    height: 455px;
+    background-image: url(imgCaseStudies/gameOfCodes/DashboardVY.png);
+    background-size: cover;
+    margin-top: 70px;
+    border:  0.5px #acacac solid;
+    border-radius: 2px;
+}
+
+.dashboardGoC::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(imgCaseStudies/gameOfCodes/DashboardVYhover.png);
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dashboardGoC:hover::after {
+    opacity: 1;
+
+}
+
+
+.kartaGoc {
+    position: relative;
+    width: 100%;
+    height: 865px;
+    background-image: url(imgCaseStudies/gameOfCodes/MapVYGoC.png);
+    background-size: cover;
+    margin-top: 70px;
+    border:  0.5px #acacac solid;
+    border-radius: 2px;
+}
+
+.kartaGoc::after {
+    content: '';
+    position: absolute;
+    height: 865px;
+    inset: 0;
+    background-image: url(imgCaseStudies/gameOfCodes/MapVYhover.png);
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.kartaGoc:hover::after {
+    opacity: 1;
+
+}
+
+.kartaGocRosa {
+    position: relative;
+    width: 100%;
+    height: 865px;
+    background-image: url(imgCaseStudies/gameOfCodes/MapVYrosa.png);
+    background-size: cover;
+    margin-top: 70px;
+    border:  0.5px #acacac solid;
+    border-radius: 2px;
+}
+
+.kartaGocRosa::after {
+    content: '';
+    position: absolute;
+    height: 865px;
+    inset: 0;
+    background-image: url(imgCaseStudies/gameOfCodes/MapVYrosaHover.png);
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.kartaGocRosa:hover::after {
+    opacity: 1;
+
+}
+
+.kapitelVy {
+    width: 100%;
+    height: 920px;
+    background-image: url(imgCaseStudies/gameOfCodes/ChapterVY.png);
+    background-size: cover;
+    margin-top: 70px;
+    border:  0.5px #acacac solid;
+    border-radius: 2px;
+}
+
+.chattisGoC {
+    width: 100%;
+    height: 450px;
+    background-image: url(imgCaseStudies/gameOfCodes/ChunksGPTAIVY.png);
+    background-size: cover;
+    margin-top: 70px;
+    border:  0.5px #acacac solid;
+    border-radius: 2px;
+}
+
+
+
+
+@media (max-width:700px) {
+
+
+
+        .caseStudiesTopImg {
+            /* background-color: rgb(246, 127, 255); */
+            margin: auto;
+            margin-top: 60px;
+            display: grid;
+            height: 350px;
+            width: 350px;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            gap: 10px;
+        }
+        
+   
+
+
+        .stagesGameOfCodes {
+            width: 100%;
+            height: 93px;
+            background-image: url(../img/caseStudies/spotYa/stagesSpotYapng.png);
+            background-size: cover;
+        }
+
+        .graphicprofileGoC {
+            width: 100%;
+            height: 288px;
+            background-image: url(imgCaseStudies/gameOfCodes/gP.png);
+            background-size: cover;
+            margin-top: 70px;
+        }
+
+
+
+        .illuGoC {
+            width: 100%;
+            height: 499px;
+            background-image: url(imgCaseStudies/gameOfCodes/illuGoCmobile.png);
+            background-size: cover;
+            margin-top: 70px;
+        }
+            
+
+
+        .dashboardGoC {
+            height: 228px;
+            margin-top: 25px;
+        }
+
+        .kartaGoc {
+            height: 430px;
+            margin-top: 25px;
+        }
+
+        .kartaGocRosa {
+            height: 430px;
+            margin-top: 25px;
+        }
+
+        .kapitelVy {
+            height: 470px;
+            margin-top: 25px;
+        }
+
+        .chattisGoC {
+            height: 225px;
+            margin-top: 25px;
+        }
+ 
+    }
