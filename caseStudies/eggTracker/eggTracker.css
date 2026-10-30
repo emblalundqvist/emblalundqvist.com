@@ -36,44 +36,51 @@
 
 
 
-.stagesSpotYa {
+.blankettEgg {
     width: 100%;
-    height: 160px;
-    background-image: url(../img/caseStudies/spotYa/stagesSpotYapng.png);
+    height: 638px;
+    background-image: url(../imgCaseStudies/imgEggTracker/genbankBlankett.png);
     background-size: cover;
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    border-radius: 5px;
 }
 
-.graphicprofileSpotYa {
-    width: 100%;
-    height: 285px;
-    background-image: url(../img/caseStudies/spotYa/graphicProfileSpotYa.png);
-    background-size: cover;
-    margin-top: 70px;
-}
 
-.userFlowSpotYa {
+
+.sketchesEgg {
     width: 100%;
-    height: 531px;
-    background-image: url(../img/caseStudies/spotYa/userFlowSpotYa.png);
+    height: 486px;
+    background-image: url(../imgCaseStudies/imgEggTracker/sketchesEgg.png);
     background-size: cover;
     margin-top: 70px;
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    border-radius: 5px;
 }
 
-.mockupRetroSpotYa {
+
+
+
+
+
+.graphicEgg {
     width: 100%;
     height: 574px;
-    background-image: url(../img/caseStudies/retroResan/MockupRetroresan.jpg);
+    background-image: url(../imgCaseStudies/imgEggTracker/graphicEgg.png);
     background-size: cover;
     margin-top: 70px;
 }
 
-.hiFiWiSpotYa {
+.bigPictEgg {
     width: 100%;
-    height: 896px;
-    background-image: url(../img/caseStudies/spotYa/hiFiWire.png);
+    height: 525px;
+    background-image: url(../../img/imgProjects/egg/mockupEgg.jpg);
     background-size: cover;
     margin-top: 70px;
+    border: 0.2px solid rgba(0, 0, 0, 0.256);
+    border-radius: 5px;
 }
+
+
 
 
 
@@ -107,49 +114,27 @@
     
    
 
+    .blankettEgg {
+        height: 318px;
+    }
+
+    .sketchesEgg {
+        height: 244px;
+    }
+
+    .graphicEgg {
+        height: 287px;
+    }
+
+    .bigPictEgg {
+        height: 262px;
+    }
 
 
 
 
 
-.stagesSpotYa {
-    width: 100%;
-    height: 93px;
-    background-image: url(../img/caseStudies/spotYa/stagesSpotYapng.png);
-    background-size: cover;
-}
 
-.graphicprofileSpotYa {
-    width: 100%;
-    height: 142px;
-    background-image: url(../img/caseStudies/spotYa/graphicProfileSpotYa.png);
-    background-size: cover;
-    margin-top: 70px;
-}
-
-.userFlowSpotYa {
-    width: 100%;
-    height: 265px;
-    background-image: url(../img/caseStudies/spotYa/userFlowSpotYa.png);
-    background-size: cover;
-    margin-top: 70px;
-}
-    
-.mockupRetro {
-    width: 100%;
-    height: 288px;
-    background-image: url(../img/caseStudies/retroResan/MockupRetroresan.jpg);
-    background-size: cover;
-    margin-top: 70px;
-}
-
-.hiFiWiSpotYa {
-    width: 100%;
-    height: 445px;
-    background-image: url(../img/caseStudies/spotYa/hiFiWire.png);
-    background-size: cover;
-    margin-top: 70px;
-}
 
     
     
